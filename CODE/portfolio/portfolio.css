@@ -5,7 +5,7 @@
 }
 
 :root {
-    --main-color: #FF5F5F;
+    --main-color: #138539;
     --white: white;
     --secondary-color: #FFA15F;
     --terziary-color: #FFD95F;
@@ -52,14 +52,12 @@ h2 {
     cursor: pointer;
 }
 
-
 .content-carrousel figure {
-    position: relative;
     width: 100%;
     height: 120px;
     overflow: hidden;
     position: absolute;
-    box-shadow: 0px 0px 20px 0px black;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);    
     transition: all 300ms;
     object-fit: contain;
     transform-style: preserve-3d;
@@ -121,9 +119,13 @@ h2 {
     font-size: 8px;
   }
 
-  .content-carrousel figure:hover i.fa {
+  .content-carrousel figure i.fa:before {
+    content: "\f002";
+}
+
+.content-carrousel figure:hover i.fa {
     opacity: 1;
-  }  
+}
 
 @keyframes rotar{
     from{

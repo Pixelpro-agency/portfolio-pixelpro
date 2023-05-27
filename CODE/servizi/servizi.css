@@ -10,7 +10,7 @@
 }
 
 :root {
-  --main-color: #FF5F5F;
+  --main-color: #138539;
   --white: white;
   --secondary-color: #FFA15F;
   --terziary-color: #FFD95F;
@@ -143,7 +143,7 @@ body {
 .icon-overlay {
   position: absolute;
   bottom: 20%;
-  right: 9%;
+  right: 8%;
   background-color: var(--main-color);
   border-radius: 50%;
   width: 5rem;

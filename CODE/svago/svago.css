@@ -5,6 +5,10 @@
 
 }
 
+:root {
+    --main-color: #138539
+}
+
 body {    
     background-image: url(../img/images.jpeg);
 }
@@ -110,6 +114,29 @@ h2 {
     transform-style: preserve-3d;
 }
 
+.icon-overlay {
+    position: absolute;
+    bottom: 8%;
+    right: 5%;
+    background-color: var(--main-color);
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    opacity: 0;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.3s ease;
+  }
+  
+  .icon-overlay i {
+    color: white;
+    font-size: 1.2rem;
+  }
+
+  .tranding-slide-img:hover .icon-overlay {  
+    opacity: 1;
+  }
 
 /* custom style */
 .container {

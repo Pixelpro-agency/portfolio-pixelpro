@@ -2,7 +2,7 @@
   --items: 10;
   --width: clamp(360px, 72vw, 720px);
   --height: calc(var(--width) / 2);
-  --main-color: #FF5F5F;
+  --main-color: #138539;
   --white: white;
   --secondary-color: #FFA15F;
   --terziary-color: #FFD95F;
@@ -12,6 +12,20 @@
 body {
   background-image: url(../img/images.jpeg);
   overflow: hidden;
+}
+
+.titolo {
+  text-align: center;
+  font-size: 50px;
+  font-family: arial;
+  margin-top: 50px;
+  margin-right: 120px;
+  margin-bottom: 70px;
+  color: aqua;
+  text-shadow: 0px 0px 6px black;
+  display: flex;
+  justify-content: flex-end;  
+  white-space: nowrap;
 }
 
 .slider {
@@ -27,75 +41,60 @@ body {
   --y: calc(var(--active) * 200%);
   --start: calc(var(--active) * 120deg);
   --opacity: calc(var(--zIndex) / var(--items) * 3 - 2);
-
   overflow: hidden;
   position: absolute;
   z-index: var(--zIndex);
   width: var(--width);
   height: var(--height);
-
   margin: calc(var(--height) * -0.5) 0 0 calc(var(--width) * -0.5);
   border-radius: 10px;
   top: 50%;
   left: 50%;
-
   user-select: none;
   transform-origin: 0% 100%;
-
   box-shadow: 0 10px 50px 10px #5f3e3e80;
   background: #000;
   pointer-events: all;
   transform: translate(var(--x), var(--y)) rotate(var(--start));
-
   transition: transform 0.9s cubic-bezier(0, 0.02, 0, 1);
 }
 
 .sliderItem .sliderBox {
   position: absolute;
-
   width: 100%;
   height: 100%;
-
   top: 0;
   left: 0;
-
   transition: opacity 0.9s cubic-bezier(0, 0.02, 0, 1);
-
   opacity: var(--opacity);
-
   z-index: 999;
 }
 
 .sliderItem .sliderBox::before {
-  content: "";
   position: absolute;
-
   top: 0;
   left: 0;
-
   width: 100%;
   height: 100%;
-
   background: linear-gradient(to bottom, #0000004d, #00000000 30%, #00000000 30%, #00000080);
-
   z-index: 999;
 }
 
 .sliderItem img {
   width: 100%;
   height: 100%;
-
   object-fit: cover;
   pointer-events: none;
 }
 
-.icon-overlay {
+.sliderItem .icon-overlay .fa.fa-search {
   position: absolute;
   bottom: 10%;
   right: 5%;
+  color: var(--white);
   background-color: var(--main-color);
   border-radius: 50%;
-  opacity: 1;
+  opacity: 0;
   width: 3rem;
   height: 3rem;
   display: flex;
@@ -104,11 +103,6 @@ body {
   transition: opacity 0.3s ease;
 }
 
-.icon-overlay i {
-  color: white;
-  font-size: 1rem;
-}
-
-.tranding-slide-img:hover .icon-overlay {  
-  opacity: 0;
+.sliderItem:hover .icon-overlay .fa.fa-search {
+  opacity: 1;
 }
