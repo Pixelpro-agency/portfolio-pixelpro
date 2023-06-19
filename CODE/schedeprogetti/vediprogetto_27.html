@@ -1,112 +1,124 @@
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vedi progetto</title>
- 
-    <!-- font awesome cdn link  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
- 
-    <!-- custom css file link  -->
-    <link rel="stylesheet" href="style.css">
- </head>
- 
- <body>
-    <section class="view-property">
- 
-       <div class="details">
-          <div class="thumb">
-             <div class="big-image">
-                <img src="../img/sito-cani.jpg" alt="">
-             </div>
- 
-             <div class="button-container">
-                <form action="" method="post">
-                   <button type="submit" name="save" class="inline-btn">Salva nei preferiti</button>
-                </form>
- 
-                <form action="" method="post">
-                   <button type="submit" name="save" class="inline-btn">Vedi progetto online</button>
-                </form>
-          </div>
- 
-          <div class="row">
-             <div class="portfolio-filter">
-                <button type="button" class="filter-btn active categorie-btn"
-                   data-filter-value="categorie">Categorie</button>
-                   <button type="button" class="active" data-filter-value="react"
-                   onclick="window.location.href='../servizi/servizi.html'">servizi</button>
-             </div>
-             <div class="portfolio-filter">
-                <button type="button" class="filter-btn active classe-btn" data-filter-value="classe">Classe</button>
-                <button type="button" class="active" data-filter="basic">medium</button>
-                <button type="button" class="active" data-filter="basic">plus</button>
-             </div>
-          </div>
- 
-          <div class="row-descrizione">
-             <h3 class="title">Descrizione del Progetto - Sito per servizio toelettatura cani</h3>
-             <p class="description">Questo sito di toelettatura per cani è il luogo ideale per far sentire il vostro amico 
-                a quattro zampe coccolato e curato. <br>              
-                Offre una vasta gamma di servizi suddivisi per categoria e grandezza del cane, in modo da poter 
-                scegliere quello più adatto alle esigenze dei vostri clienti. <br>
-                Dal taglio del pelo al bagno e alla toelettatura delle orecchie, la vostra esperienza e la passione per il 
-                vostro lavoro vi permettono di garantire prestazioni di alta qualità. <br>             
-                Inoltre, la funzione di prenotazione online rende facile e conveniente prenotare un appuntamento 
-                con uno dei vostri esperti toelettatori. <br>               
-                Venite a scoprire tutti i servizi e regalate al vostro cane un'esperienza di toelettatura 
-                indimenticabile.
-             </p>
-          </div>
- 
- 
- 
- 
- 
-          <h3 class="title">dettagli</h3>
-          <div class="flex">
-             <div class="box">
-                <p><i>camere :</i><span>2 BHK</span></p>
-                <p><i>importo del deposito
-                      :</i><span>0</span></p>
-                <p><i>stato :</i><span>disponibile subito</span></p>
-                <p><i>camere da letto :</i><span>3</span></p>
-                <p><i>bagni :</i><span>2</span></p>
-                <p><i>balconi :</i><span>1</span></p>
-             </div>
-             <div class="box">
-                <p><i>area calpestabile:</i><span>750sqft</span></p>
-                <p><i>età :</i><span>3 anni</span></p>
-                <p><i>camere per piano :</i><span>3</span></p>
-                <p><i>piani totali
-                      :</i><span>2</span></p>
-                <p><i>arredata :</i><span>semi-arredata</span></p>
-                <p><i>prestito :</i><span>disponibile</span></p>
-             </div>
-          </div>
-          <h3 class="title">servizi</h3>
-          <div class="flex">
-             <div class="box">
-                <p><i class="fas fa-check"></i><span>ascensori</span></p>
-                <p><i class="fas fa-check"></i><span>guardie di sicurezza</span></p>
-                <p><i class="fas fa-times"></i><span>terreno di gioco</span></p>
-                <p><i class="fas fa-check"></i><span>giardini</span></p>
-                <p><i class="fas fa-check"></i><span>fornitura d'acqua</span></p>
-                <p><i class="fas fa-check"></i><span>riserva di energia</span></p>
-             </div>
-             <div class="box">
-                <p><i class="fas fa-check"></i><span>area parcheggio</span></p>
-                <p><i class="fas fa-times"></i><span>palestra</span></p>
-                <p><i class="fas fa-check"></i><span>centro commerciale
-                   </span></p>
-                <p><i class="fas fa-check"></i><span>ospedale</span></p>
-                <p><i class="fas fa-check"></i><span>scuole</span></p>
-                <p><i class="fas fa-check"></i><span>zona di mercato
-                   </span></p>
-             </div>
-          </div>
- 
-       </div>
- 
-    </section>
- </body>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Vedi progetto</title>
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+   <section class="view-property">
+
+      <div class="details">
+         <div class="thumb">
+            <div class="big-image">
+               <img src="../img/sito-cani.jpg" alt="">
+            </div>
+
+            <div class="button-container">
+               <form action="" method="post">
+                  <button type="submit" name="save" class="inline-btn">Salva nei preferiti</button>
+               </form>
+
+               <div>
+                  <form action="" method="post">
+                     <a href="https://sito-cani.vercel.app/" class="inline-btn">Vedi progetto
+                        online</a>
+                  </form>
+               </div>
+            </div>
+
+            <div class="row">
+               <div class="portfolio-filter">
+                  <button type="button" class="filter-btn active categorie-btn"
+                     data-filter-value="categorie">Categorie</button>
+                  <button type="button" class="active" data-filter-value="react"
+                     onclick="window.location.href='../servizi/servizi.html'">servizi</button>
+               </div>
+               <div class="portfolio-filter">
+                  <button type="button" class="filter-btn active classe-btn" data-filter-value="classe">Classe</button>
+                  <button type="button" class="active" data-filter="basic">medium</button>
+                  <button type="button" class="active" data-filter="basic">plus</button>
+               </div>
+            </div>
+
+            <div class="row-descrizione">
+               <h3 class="title">Descrizione del Progetto - Sito per servizio toelettatura cani</h3>
+               <p class="description">Questo sito di toelettatura per cani è il luogo ideale per far sentire il vostro
+                  amico a quattro zampe coccolato e curato. <br>
+                  Offre una vasta gamma di servizi suddivisi per categoria e grandezza del cane, in modo da poter
+                  scegliere quello più adatto alle esigenze dei vostri clienti. Dal taglio del pelo al bagno e alla
+                  toelettatura delle orecchie, la vostra esperienza e la passione per il vostro lavoro vi permettono
+                  di garantire prestazioni di alta qualità. <br>
+                  Inoltre, la funzione di prenotazione online rende facile e conveniente prenotare un
+                  appuntamento con uno dei vostri esperti toelettatori. <br>
+                  Nella homepage di apertura abbiamo un carosello scorrevole di immagini gradevoli e invitanti. <br>
+                  La barra di navigazione rimane fissa anche scorrendo lungo la pagina. Come sezioni di richiamo
+                  abbiamo inserito 'Home', 'Prezzi', 'Contatti' e 'Prendi appuntamento'. <br>
+                  Il tasto per la CTA 'Prendi un appuntamento' viene ripetuto diverse volte sul sito. <br>
+                  Subito dopo la homepage abbiamo direttamente il form per fissare un appuntamento, anche qui abbellito
+                  da una gradevole immagine di un cucciolo. <br>
+                  Segue il piano dei prezzi che verrà agganciato alla grandezza del cane, in base a quanto è grande il
+                  cane il cliente verrà automaticamente dirottato sul prezzo corrispondente. <br>
+                  Venite a scoprire tutti i servizi e regalate al vostro cane un'esperienza di toelettatura
+                  indimenticabile. <br>
+                  Grazie per aver dedicato il vostro tempo alla visione di questo simpatico progetto!
+               </p>
+            </div>
+
+
+
+
+
+            <h3 class="title">dettagli</h3>
+            <div class="flex">
+               <div class="box">
+                  <p><i>camere :</i><span>2 BHK</span></p>
+                  <p><i>importo del deposito
+                        :</i><span>0</span></p>
+                  <p><i>stato :</i><span>disponibile subito</span></p>
+                  <p><i>camere da letto :</i><span>3</span></p>
+                  <p><i>bagni :</i><span>2</span></p>
+                  <p><i>balconi :</i><span>1</span></p>
+               </div>
+               <div class="box">
+                  <p><i>area calpestabile:</i><span>750sqft</span></p>
+                  <p><i>età :</i><span>3 anni</span></p>
+                  <p><i>camere per piano :</i><span>3</span></p>
+                  <p><i>piani totali
+                        :</i><span>2</span></p>
+                  <p><i>arredata :</i><span>semi-arredata</span></p>
+                  <p><i>prestito :</i><span>disponibile</span></p>
+               </div>
+            </div>
+            <h3 class="title">servizi</h3>
+            <div class="flex">
+               <div class="box">
+                  <p><i class="fas fa-check"></i><span>ascensori</span></p>
+                  <p><i class="fas fa-check"></i><span>guardie di sicurezza</span></p>
+                  <p><i class="fas fa-times"></i><span>terreno di gioco</span></p>
+                  <p><i class="fas fa-check"></i><span>giardini</span></p>
+                  <p><i class="fas fa-check"></i><span>fornitura d'acqua</span></p>
+                  <p><i class="fas fa-check"></i><span>riserva di energia</span></p>
+               </div>
+               <div class="box">
+                  <p><i class="fas fa-check"></i><span>area parcheggio</span></p>
+                  <p><i class="fas fa-times"></i><span>palestra</span></p>
+                  <p><i class="fas fa-check"></i><span>centro commerciale
+                     </span></p>
+                  <p><i class="fas fa-check"></i><span>ospedale</span></p>
+                  <p><i class="fas fa-check"></i><span>scuole</span></p>
+                  <p><i class="fas fa-check"></i><span>zona di mercato
+                     </span></p>
+               </div>
+            </div>
+
+         </div>
+
+   </section>
+</body>
