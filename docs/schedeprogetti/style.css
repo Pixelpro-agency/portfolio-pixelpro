@@ -125,6 +125,30 @@ section {
    background-color: var(--main-color);
 }
 
+.portfolio-filter button[data-filter="ultra"] {
+   color: var(--main-color);
+}
+.portfolio-filter button[data-filter="ultra"]:hover {
+   /* Imposta il colore di sfondo iniziale */
+   background-color: var(--white);
+}
+
+.portfolio-filter button[data-filter="basic"] {
+   color: var(--main-color);
+}
+.portfolio-filter button[data-filter="basic"]:hover {
+   /* Imposta il colore di sfondo iniziale */
+   background-color: var(--white);
+}
+
+.portfolio-filter button[data-filter="medium"] {
+   color: var(--main-color);
+}
+.portfolio-filter button[data-filter="medium"]:hover {
+   /* Imposta il colore di sfondo iniziale */
+   background-color: var(--white);
+}
+
 .row {
    display: flex;
 }

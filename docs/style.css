@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap');
 
 * {
     margin: 0;
@@ -248,7 +249,6 @@ section {
     background-color: var(--main-color);
 }
 
-
 .portfolio-filter button:last-child {
     margin-right: 0;
 }
@@ -257,6 +257,34 @@ section {
     color: var(--white);
     background-color: var(--main-color);
 }
+
+.portfolio-filter button[data-filter="ultra"] {
+    color: var(--main-color);
+ }
+ .portfolio-filter button[data-filter="ultra"]:hover {
+    background-color: var(--white);
+ }
+ 
+ .portfolio-filter button[data-filter="plus"] {
+    color: var(--main-color);
+ }
+ .portfolio-filter button[data-filter="plus"]:hover {
+    background-color: var(--white);
+ }
+
+ .portfolio-filter button[data-filter="basic"] {
+    color: var(--main-color);
+ }
+ .portfolio-filter button[data-filter="basic"]:hover {
+    background-color: var(--white);
+ }
+ 
+ .portfolio-filter button[data-filter="medium"] {
+    color: var(--main-color);
+ }
+ .portfolio-filter button[data-filter="medium"]:hover {
+    background-color: var(--white);
+ }
 
 .filter-btn {
     background: transparent;
@@ -319,7 +347,6 @@ section {
     transition: 0.5s;
     opacity: 0;
 }
-
 
 /* project info */
 
@@ -456,35 +483,241 @@ section {
     margin-bottom: 10px;
 }
 
-/* about section */
+/* skills */
 
-.about-me-container {
-    margin-top: 100px;
-    display: flex;
-    gap: 100px;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
-.about-image-container {
-    width: 40%;
-    height: 600px;
+.skills {
+    padding-bottom: 20px;
+}
+
+.contenitore-skills {
     position: relative;
+    width: 500px;
+    height: 500px;
+    border: 2px solid #138539;
+    border-radius: 50%;
 }
 
-.about-image {
+.contenitore-skills-destro {
+    position: relative;
+    margin-left: 100px;
+    width: 500px;
+    height: 500px;
+    border: 2px solid #138539;
+    border-radius: 50%;
+}
+
+.contenitore-skills .icon {
+    position: relative;
+    left: -50%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.contenitore-skills-destro .icon {
+    position: relative;
+    left: -50%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.contenitore-skills .icon .imgBx {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    transition: 0.5s;
+    border: 1px solid #fff;
+    box-shadow: 0 0 0 4px #222, 0 0 0 6px #fff;
+    transform: rotate(calc(360deg/12 * var(--i)));
+    transform-origin: 272px;
+    z-index: 100;
+    overflow: hidden;
+}
+
+.contenitore-skills-destro .icon .imgBx {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    transition: 0.5s;
+    border: 1px solid #fff;
+    box-shadow: 0 0 0 4px #222, 0 0 0 6px #fff;
+    transform: rotate(calc(360deg/12 * var(--i)));
+    transform-origin: 272px;
+    z-index: 100;
+    overflow: hidden;
+}
+
+.contenitore-skills .icon .imgBx.active {
+    box-shadow: 0 0 0 4px #222, 0 0 0 12px #138539;
+}
+
+.contenitore-skills-destro .icon .imgBx.active {
+    box-shadow: 0 0 0 4px #222, 0 0 0 12px #138539;
+}
+.contenitore-skills .icon .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    transform: rotate(calc(-360deg/12 * var(--i)));
+    transition: 0.5s;
+}
+
+.contenitore-skills-destro .icon .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    transform: rotate(calc(-360deg/12 * var(--i)));
+    transition: 0.5s;
+}
+
+.content {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content::before {
+    content: '';
+    position: absolute;
+    inset: 60px;
+    border: 4px solid transparent;
+    border-left: 4px solid #2196f3;
+    border-right: 4px solid #fff;
+    border-radius: 50%;
+    animation: animte_01 5s linear infinite;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.contenitori-skills {
+    display: flex;
+}
+
+@keyframes animte_01 {
+    0%
+    {
+        rotate: 0deg;
+    }
+    100%
+    {
+        rotate: 360deg;
+    }
+}
+
+.content::after {
+    content: '';
+    position: absolute;
+    inset: 120px;
+    border: 4px solid transparent;
+    border-left: 4px solid #ff1d50;
+    border-right: 4px solid #fff;
+    border-radius: 50%;
+    animation: animte_02 2.5s linear infinite;
+    z-index: 1;
+    pointer-events: none;
+}
+
+@keyframes animte_02 {
+    0%
+    {
+        rotate: 360deg;
+    }
+    100%
+    {
+        rotate: 0deg;
+    }
+}
+.contentBx {
+    position: absolute;
+    transform: scale(0);
+    transition: 0.5s;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contentBx.active {
+    transform: scale(1);
+    opacity: 1;
+    transition-delay: 0.5s;
+}
+
+.contentBx .card {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contentBx .card .imgBx {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.contentBx .card .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.download-btn {
-    position: absolute;
-    bottom: 30px;
-    left: 50%;
-    transform: translateX(-50%);
+.contentBx .card .textBx {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-.personal-info {
+.contentBx .card .textBx h2 {
+    position: relative;
+    font-size: 1em;
+    font-weight: 600;
     color: #fff;
+    line-height: 1em;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.contentBx .card .textBx h2 span {
+    font-size: 0.65em;
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: 0.1em;
 }
 
 .title {
@@ -494,137 +727,6 @@ section {
     font-size: 2rem;
     font-weight: 300;
     margin-bottom: 40px;
-}
-
-.personal-info .title {
-    text-align: left;
-}
-
-.personal-info p {
-    margin: 30px 0;
-    font-size: 1.1rem;
-}
-
-.personal-info p span {
-    opacity: 0.5;
-}
-
-.social-links {
-    color: #fff;
-    font-size: 2rem;
-    margin-right: 20px;
-}
-
-/* skills */
-
-.skills {
-    position: relative;
-    margin: 100px 0;
-}
-
-.skills-container {
-    margin: 100px 0;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 50px;
-}
-
-.skill-card {
-    width: 150px;
-    height: 200px;
-    background: #1a1a1a;
-    padding: 20px;
-    position: relative;
-    overflow: hidden;
-    transition: 0.5s;
-}
-
-.skill-image {
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-    display: block;
-    margin: auto;
-    transition: .5s;
-}
-
-.skill-name {
-    position: absolute;
-    color: #fff;
-    font-size: 1.2rem;
-    text-align: center;
-    bottom: 0;
-    left: 0;
-    padding: 20px;
-    width: 100%;
-    transition: 0.5s;
-    border-top: 5px solid #000;
-}
-
-.skill-card::after,
-.skill-card::before {
-    content: '';
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    background: #000;
-    z-index: 2;
-    transform: rotate(45deg);
-}
-
-.skill-card::before {
-    bottom: -20px;
-    left: -20px;
-}
-
-.skill-card::after {
-    bottom: -20px;
-    right: -20px;
-}
-
-.skill-card:hover {
-    background: #000;
-}
-
-.skill-card:nth-child(1):hover .skill-name {
-    background: #ff5722;
-}
-
-.skill-card:nth-child(2):hover .skill-name {
-    background: #2196f3;
-}
-
-.skill-card:nth-child(3):hover .skill-name {
-    background: #f7df1e;
-}
-
-.skill-card:nth-child(4):hover .skill-name {
-    background: #61dafb;
-}
-
-.skill-card:nth-child(5):hover .skill-name {
-    background: #83cd29;
-}
-
-.skill-card:nth-child(6):hover .skill-name {
-    background: #07b6d5;
-}
-
-.skill-card:nth-child(7):hover .skill-name {
-    background: #336791;
-}
-
-.skill-card:nth-child(8):hover .skill-name {
-    background: #58aa50;
-}
-
-.skill-card:nth-child(9):hover .skill-name {
-    background: #ffcb2d;
-}
-
-.skill-card:hover .skill-image {
-    transform: scale(1.1) translateY(-10px);
 }
 
 /* education and experiences */
