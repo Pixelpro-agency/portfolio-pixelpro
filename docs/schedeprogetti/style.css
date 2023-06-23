@@ -47,8 +47,14 @@ section {
 .button-container {
    display: flex;
    justify-content: center;
+   gap: 10px; /* Regola lo spazio desiderato */
    align-items: center;
    margin-top: 20px;
+}
+
+.button-container button,
+.button-container a {
+   margin-right: 10px; /* Regola il margine desiderato */
 }
 
 .button-container form {
@@ -56,7 +62,7 @@ section {
  }
 
 .inline-btn {
-   font-size: 2rem;
+   font-size: 1.5rem;
    text-transform: uppercase;
    outline: none;
    border-color: var(--main-color);

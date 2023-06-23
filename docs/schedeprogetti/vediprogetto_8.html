@@ -1,75 +1,71 @@
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vedi progetto</title>
- 
-    <!-- font awesome cdn link  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
- 
-    <!-- custom css file link  -->
-    <link rel="stylesheet" href="style.css">
- </head>
- 
- <body>
-    <section class="view-property">
- 
-       <div class="details">
-          <div class="thumb">
-             <div class="big-image">
-                <img src="../img/palestra-gym.jpg" alt="">
-             </div>
- 
-             <div class="button-container">
-                <form action="" method="post">
-                   <button type="submit" name="save" class="inline-btn">Condividi</button>
-                </form>
- 
-                <div>
-                  <form action="" method="post">
-                     <a href="https://palestra-gym.vercel.app/" class="inline-btn">Vedi progetto
-                        online</a>
-                  </form>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Vedi progetto</title>
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+   <section class="view-property">
+
+      <div class="details">
+         <div class="thumb">
+            <div class="big-image">
+               <img src="../img/palestra-gym.jpg" alt="">
+            </div>
+
+            <div class="button-container">
+               <button type="submit" name="save" class="inline-btn">Condividi</button>
+               <a href="https://palestra-gym.vercel.app/" class="inline-btn">Vedi progetto
+                  online</a>
+               <a href="/docs/index.html" class="inline-btn">Torna alla Home</a>
+            </div>
+            <div class="row">
+               <div class="portfolio-filter">
+                  <button type="button" class="filter-btn active categorie-btn"
+                     data-filter-value="categorie">Categorie</button>
+                  <button type="button" class="active" data-filter-value="react"
+                     onclick="window.location.href='../servizi/servizi.html'">servizi</button>
+                  <button type="button" class="active" data-filter-value="fullstack"
+                     onclick="window.location.href='../svago/svago.html'">svago</button>
                </div>
-          </div>
- 
-          <div class="row">
-             <div class="portfolio-filter">
-                <button type="button" class="filter-btn active categorie-btn"
-                   data-filter-value="categorie">Categorie</button>
-                   <button type="button" class="active" data-filter-value="react"
-                   onclick="window.location.href='../servizi/servizi.html'">servizi</button>
-                   <button type="button" class="active" data-filter-value="react"
-                   onclick="window.location.href='../svago/svago.html'">svago</button>
-             </div>
-             <div class="portfolio-filter">
-                <button type="button" class="filter-btn active classe-btn" data-filter-value="classe">Piano consigliato</button>
-                <button type="button" class="active" data-filter="basic">medium</button>
-                <button type="button" class="active" data-filter="medium">plus</button>
-             </div>
-          </div>
- 
-          <div class="row-descrizione">
-             <h3 class="title">Descrizione del Progetto - Sito per una palestra</h3>
-             <p class="description">Benvenuti nel progetto di un sito web per una palestra! <br>
-               Qui potrete raccontare tutto ciò che offrite perché i vostri clienti possano  raggiungere i loro 
-               obiettivi di fitness e benessere. <br>             <button type="button" class="active" data-filter-value="react"
-                   onclick="window.location.href='../servizi/servizi.html'">servizi</button><button type="button" class="active" data-filter-value="react"
-                   onclick="window.location.href='../servizi/servizi.html'">servizi</button>
-               Nella sezione "Home" troveranno una panoramica della vostra palestra, con le ultime notizie e le 
-               promozioni in corso. <br>              
-               Nella sezione "About" potranno conoscere la vostra storia e la vostra filosofia, nonché il vostro 
-               impegno per aiutarli a raggiungere il loro massimo potenziale. <br>             
-               Nella sezione "Piani" troveranno una selezione di programmi personalizzati, adatti a tutte le 
-               esigenze e le abilità, dai principianti agli atleti esperti. <br>              
-               Nella sezione "Programmi" potranno scoprire i vostri corsi, le lezioni di gruppo e i programmi di 
-               allenamento funzionale. <br>            
-               Infine, nella sezione "Testimonianze" potranno leggere le opinioni dei vostri clienti soddisfatti, 
-               che testimoniano la qualità dei vostri servizi e l'efficacia dei vostri programmi. <br>             
-               Vi invitiamo a visitare online questo progetto e a scoprire di persona il nostro impegno per 
-               la realizzazione di siti web accattivanti ma soprattutto funzionali e adatti alle vostre esigenze. <br>         
-               Grazie per aver visitato il nostro progetto!
-             </p>
+               <div class="portfolio-filter">
+                  <button type="button" class="filter-btn active classe-btn" data-filter-value="classe">Piano
+                     consigliato</button>
+                  <button type="button" class="active" data-filter="basic">medium</button>
+                  <button type="button" class="active" data-filter="medium">plus</button>
+               </div>
+            </div>
+
+            <div class="row-descrizione">
+               <h3 class="title">Descrizione del Progetto - Sito per una palestra</h3>
+               <p class="description">Benvenuti nel progetto di un sito web per una palestra! <br>
+                  Qui potrete raccontare tutto ciò che offrite perché i vostri clienti possano raggiungere i loro
+                  obiettivi di fitness e benessere. <br> <button type="button" class="active" data-filter-value="react"
+                     onclick="window.location.href='../servizi/servizi.html'">servizi</button><button type="button"
+                     class="active" data-filter-value="react"
+                     onclick="window.location.href='../servizi/servizi.html'">servizi</button>
+                  Nella sezione "Home" troveranno una panoramica della vostra palestra, con le ultime notizie e le
+                  promozioni in corso. <br>
+                  Nella sezione "About" potranno conoscere la vostra storia e la vostra filosofia, nonché il vostro
+                  impegno per aiutarli a raggiungere il loro massimo potenziale. <br>
+                  Nella sezione "Piani" troveranno una selezione di programmi personalizzati, adatti a tutte le
+                  esigenze e le abilità, dai principianti agli atleti esperti. <br>
+                  Nella sezione "Programmi" potranno scoprire i vostri corsi, le lezioni di gruppo e i programmi di
+                  allenamento funzionale. <br>
+                  Infine, nella sezione "Testimonianze" potranno leggere le opinioni dei vostri clienti soddisfatti,
+                  che testimoniano la qualità dei vostri servizi e l'efficacia dei vostri programmi. <br>
+                  Vi invitiamo a visitare online questo progetto e a scoprire di persona il nostro impegno per
+                  la realizzazione di siti web accattivanti ma soprattutto funzionali e adatti alle vostre esigenze.
+                  <br>
+                  Grazie per aver visitato il nostro progetto!
+               </p>
             </div>
          </div>
       </div>

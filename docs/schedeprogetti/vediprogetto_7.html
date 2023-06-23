@@ -1,81 +1,84 @@
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vedi progetto</title>
- 
-    <!-- font awesome cdn link  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
- 
-    <!-- custom css file link  -->
-    <link rel="stylesheet" href="style.css">
- </head>
- 
- <body>
-    <section class="view-property">
- 
-       <div class="details">
-          <div class="thumb">
-             <div class="big-image">
-                <img src="../img/hotel-resorts.jpg" alt="">
-             </div>
- 
-             <div class="button-container">
-                <form action="" method="post">
-                   <button type="submit" name="save" class="inline-btn">Condividi</button>
-                </form>
- 
-                <div>
-                  <form action="" method="post">
-                     <a href="https://pixelpro-agency.github.io/hotel-resorts/" class="inline-btn">Vedi progetto
-                        online</a>
-                  </form>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Vedi progetto</title>
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+   <section class="view-property">
+
+      <div class="details">
+         <div class="thumb">
+            <div class="big-image">
+               <img src="../img/hotel-resorts.jpg" alt="">
+            </div>
+
+            <div class="button-container">
+               <button type="submit" name="save" class="inline-btn">Condividi</button>
+               <a href="https://pixelpro-agency.github.io/hotel-resorts/" class="inline-btn">Vedi progetto
+                  online</a>
+               <a href="/docs/index.html" class="inline-btn">Torna alla Home</a>
+            </div>
+            <div class="row">
+               <div class="portfolio-filter">
+                  <button type="button" class="filter-btn active categorie-btn"
+                     data-filter-value="categorie">Categorie</button>
+                  <button type="button" class="active" data-filter-value="react"
+                     onclick="window.location.href='../servizi/servizi.html'">servizi</button>
+                  <button type="button" class="active" data-filter-value="fullstack"
+                     onclick="window.location.href='../svago/svago.html'">svago</button>
                </div>
-          </div>
- 
-          <div class="row">
-             <div class="portfolio-filter">
-                <button type="button" class="filter-btn active categorie-btn"
-                   data-filter-value="categorie">Categorie</button>
-                   <button type="button" class="active" data-filter-value="react"
-                   onclick="window.location.href='../servizi/servizi.html'">servizi</button>
-                   <button type="button" class="active" data-filter-value="react"
-                   onclick="window.location.href='../svago/svago.html'">svago</button>
-             </div>
-             <div class="portfolio-filter">
-                <button type="button" class="filter-btn active classe-btn" data-filter-value="classe">Piano consigliato</button>
-                <button type="button" class="active" data-filter="medium">basic</button>
-                <button type="button" class="active" data-filter="basic">medium</button>
-             </div>
-          </div>
- 
-          <div class="row-descrizione">
-             <h3 class="title">Descrizione del Progetto - Sito di prenotazione hotels</h3>
-             <p class="description">Benvenuti nel progetto di un sito web di prenotazione hotels! <br> 
-               In questo sito offrirete un modo semplice e conveniente per prenotare l'alloggio ideale in 
-               qualsiasi parte del mondo. <br> 
-               Nella pagina principale troviamo un carosello di slide per presentare alcune delle vostre migliori 
-               offerte, accompagnato da un modulo di 'verifica disponibilità' facile da usare, che permetterà ai clienti di 
-               scegliere subito la migliore location disponibile. <br> 
-               La barra di navigazione in alto sparirà scendendo lungo la pagina ma queste barre sono tutte personalizzabili, per cui
-               se preferite che rimanga fissa sulla pagina si può modificare. <br> 
-               Anche le sezioni sono personalizzabili, noi abbiamo scelto 'Home', 'About', 'Prenotazioni, 'Galleria', 'Contatti', 
-               'Recensioni'. <br> 
-               Subito sotto abbiamo il form per la prenotazione online dove i clienti possono inserire data di arrivo, data di partenza, 
-               numero di adulti, numero di bambini e le camere. <br> 
-               Nella sezione "About" che comprende la presentazione del personale, i cibi che offrite ed eventualmente la piscina 
-               potrete presentare la vostra storia e la vostra missione, il tutto sempre accompagnato dai tasti per la CTA e cioé 
-               'Fai la prenotazione', 'Contattaci' e 'Verifica la disponibilità. <br> 
-               Ripetiamo il form per la prenotazione e nella sezione "Galleria" inseriremo una selezione di immagini delle vostre 
-               strutture, per far vedere ai clienti, in anticipo, il luogo in cui soggiorneranno. <br> 
-               Questa galleria sarà un carosello di slide dove per passare a quella successiva si potrà usare il mouse o cliccare
-               l'iconcina posta sotto. <br> 
-               La sezione "Contatti" permetterà di contattarvi per qualsiasi domanda o richiesta, 
-               mentre nella sezione "Recensioni" potranno leggere le opinioni dei vostri clienti soddisfatti. <br> 
-               Possiamo inserire una sezione per le FAQ cioé le principali risposte alle domande più frequenti e usuali. <br> 
-               Siamo sempre al vostro servizio per assicurarvi il miglior sito web possibile. <br> 
-               Grazie per aver visitato questo progetto!           
-             </p>
+               <div class="portfolio-filter">
+                  <button type="button" class="filter-btn active classe-btn" data-filter-value="classe">Piano
+                     consigliato</button>
+                  <button type="button" class="active" data-filter="medium">basic</button>
+                  <button type="button" class="active" data-filter="basic">medium</button>
+               </div>
+            </div>
+
+            <div class="row-descrizione">
+               <h3 class="title">Descrizione del Progetto - Sito di prenotazione hotels</h3>
+               <p class="description">Benvenuti nel progetto di un sito web di prenotazione hotels! <br>
+                  In questo sito offrirete un modo semplice e conveniente per prenotare l'alloggio ideale in
+                  qualsiasi parte del mondo. <br>
+                  Nella pagina principale troviamo un carosello di slide per presentare alcune delle vostre migliori
+                  offerte, accompagnato da un modulo di 'verifica disponibilità' facile da usare, che permetterà ai
+                  clienti di
+                  scegliere subito la migliore location disponibile. <br>
+                  La barra di navigazione in alto sparirà scendendo lungo la pagina ma queste barre sono tutte
+                  personalizzabili, per cui
+                  se preferite che rimanga fissa sulla pagina si può modificare. <br>
+                  Anche le sezioni sono personalizzabili, noi abbiamo scelto 'Home', 'About', 'Prenotazioni, 'Galleria',
+                  'Contatti',
+                  'Recensioni'. <br>
+                  Subito sotto abbiamo il form per la prenotazione online dove i clienti possono inserire data di
+                  arrivo, data di partenza,
+                  numero di adulti, numero di bambini e le camere. <br>
+                  Nella sezione "About" che comprende la presentazione del personale, i cibi che offrite ed
+                  eventualmente la piscina
+                  potrete presentare la vostra storia e la vostra missione, il tutto sempre accompagnato dai tasti per
+                  la CTA e cioé
+                  'Fai la prenotazione', 'Contattaci' e 'Verifica la disponibilità. <br>
+                  Ripetiamo il form per la prenotazione e nella sezione "Galleria" inseriremo una selezione di immagini
+                  delle vostre
+                  strutture, per far vedere ai clienti, in anticipo, il luogo in cui soggiorneranno. <br>
+                  Questa galleria sarà un carosello di slide dove per passare a quella successiva si potrà usare il
+                  mouse o cliccare
+                  l'iconcina posta sotto. <br>
+                  La sezione "Contatti" permetterà di contattarvi per qualsiasi domanda o richiesta,
+                  mentre nella sezione "Recensioni" potranno leggere le opinioni dei vostri clienti soddisfatti. <br>
+                  Possiamo inserire una sezione per le FAQ cioé le principali risposte alle domande più frequenti e
+                  usuali. <br>
+                  Siamo sempre al vostro servizio per assicurarvi il miglior sito web possibile. <br>
+                  Grazie per aver visitato questo progetto!
+               </p>
             </div>
          </div>
       </div>

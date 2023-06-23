@@ -1,82 +1,86 @@
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vedi progetto</title>
- 
-    <!-- font awesome cdn link  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
- 
-    <!-- custom css file link  -->
-    <link rel="stylesheet" href="style.css">
- </head>
- 
- <body>
-    <section class="view-property">
- 
-       <div class="details">
-          <div class="thumb">
-             <div class="big-image">
-                <img src="../img/portfolio-personale.jpg" alt="">
-             </div>
- 
-             <div class="button-container">
-                <form action="" method="post">
-                   <button type="submit" name="save" class="inline-btn">Condividi</button>
-                </form>
- 
-                <div>
-                  <form action="" method="post">
-                     <a href="https://pixelpro-agency.github.io/portfolio-personale/" class="inline-btn">Vedi progetto
-                        online</a>
-                  </form>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Vedi progetto</title>
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+   <section class="view-property">
+
+      <div class="details">
+         <div class="thumb">
+            <div class="big-image">
+               <img src="../img/portfolio-personale.jpg" alt="">
+            </div>
+
+            <div class="button-container">
+               <button type="submit" name="save" class="inline-btn">Condividi</button>
+               <a href="https://pixelpro-agency.github.io/portfolio-personale/" class="inline-btn">Vedi progetto
+                  online</a>
+               <a href="/docs/index.html" class="inline-btn">Torna alla Home</a>
+            </div>
+            <div class="row">
+               <div class="portfolio-filter">
+                  <button type="button" class="filter-btn active categorie-btn"
+                     data-filter-value="categorie">Categorie</button>
+                  <button type="button" class="active" data-filter-value="react"
+                     onclick="window.location.href='../portfolio/portfolio.html'">portfolio</button>
+                  <button type="button" class="active" data-filter-value="fullstack"
+                     onclick="window.location.href='../servizi/servizi.html'">servizi</button>
                </div>
-          </div>
- 
-          <div class="row">
-             <div class="portfolio-filter">
-                <button type="button" class="filter-btn active categorie-btn"
-                   data-filter-value="categorie">Categorie</button>
-                <button type="button" class="active" data-filter-value="react"
-                   onclick="window.location.href='../portfolio/portfolio.html'">portfolio</button>
-                   <button type="button" class="active" data-filter-value="react"
-                   onclick="window.location.href='../servizi/servizi.html'">servizi</button>
-             </div>
-             <div class="portfolio-filter">
-                <button type="button" class="filter-btn active classe-btn" data-filter-value="classe">Piano consigliato</button>
-                <button type="button" class="active" data-filter="basic">medium</button>
-                <button type="button" class="active" data-filter="medium">plus</button>
-             </div>
-          </div>
- 
-          <div class="row-descrizione">
-             <h3 class="title">Descrizione del Progetto - Sito per un portfolio personale</h3>
-             <p class="description">Oltre alla funzionalità della modalità chiara e scura, il design di questo sito 
-               Web ha un aspetto moderno frutto di diverse animazioni. <br>
-               La Homepage si apre con l'immagine che compare arrivando da sotto e le scritte da sinistra. <br>
-               In questo sito abbiamo due barre di navigazione, una posta in alto che sparisce scendendo lungo 
-               la pagina e un'altra barra a sinistra che invece rimane fissa. <br>
-               Nella barra in alto abbiamo inserito alcune voci che potremo personalizzare secondo le vostre esigenze, noi
-               abbiamo inserito: 'Home', 'Servizi', 'Portfolio' e 'Contatti' oltre al tasto per passare dalla modalità
-               'giorno' alla modalità 'notte' e viceversa. <br>
-               Nella barra a sinistra invece abbiamo posizionato le icone di rimando ai social e un simpatico tasto in
-               alto per tornare ad inizio pagina. <br>
-               Proseguendo abbiamo inserito una sezione 'Servizi' dove potrete elencare quella che è la vostra attività e tutto
-               ciò che potrete offrire ai clienti. <br>
-               Accattivante anche la sezione 'Esperienze' dove abbiamo inserito una animazione con grafico circolare per 
-               quantificare le vostre conoscenze del settore. <br>
-               Negli 'Ultimi lavori' e nel 'Portfolio' potrete inserire tutti i vostri lavori eseguiti e che sono online, 
-               i vostri progetti né più né meno di come stiamo facendo noi su questo sito. <br>
-               Parte sempre molto importante sono le 'Testimonianze', qui non possono mancare le recensioni dei vostri clienti 
-               soddisfatti. Anche se questa sezione può non piacere ad alcuni, considerate che è sempre quella che vi fa salire di 
-               immagine, di reputazione e ha un ritorno economico sempre molto interessante. <br>
-               Chiude il sito la sezione 'Contatti'. <br>
-               Considerate sempre che questi siti che noi classifichiamo come 'Portfolio' sono adatti per ogni tipo di libero 
-               professionista: avvocati, medici, architetti, fotografi, youtuber, influencer ecc.. <br>
-               Si tratta solo di personalizzarli secondo le vostre esigenze. <br>
-               Grazie per aver dedicato del tempo a visionare questo progetto ma siamo certi che l'eleganza e lo stile di questo
-               sito vi hanno ripagato alla grande!             
-             </p>
+               <div class="portfolio-filter">
+                  <button type="button" class="filter-btn active classe-btn" data-filter-value="classe">Piano
+                     consigliato</button>
+                  <button type="button" class="active" data-filter="basic">medium</button>
+                  <button type="button" class="active" data-filter="medium">plus</button>
+               </div>
+            </div>
+
+            <div class="row-descrizione">
+               <h3 class="title">Descrizione del Progetto - Sito per un portfolio personale</h3>
+               <p class="description">Oltre alla funzionalità della modalità chiara e scura, il design di questo sito
+                  Web ha un aspetto moderno frutto di diverse animazioni. <br>
+                  La Homepage si apre con l'immagine che compare arrivando da sotto e le scritte da sinistra. <br>
+                  In questo sito abbiamo due barre di navigazione, una posta in alto che sparisce scendendo lungo
+                  la pagina e un'altra barra a sinistra che invece rimane fissa. <br>
+                  Nella barra in alto abbiamo inserito alcune voci che potremo personalizzare secondo le vostre
+                  esigenze, noi
+                  abbiamo inserito: 'Home', 'Servizi', 'Portfolio' e 'Contatti' oltre al tasto per passare dalla
+                  modalità
+                  'giorno' alla modalità 'notte' e viceversa. <br>
+                  Nella barra a sinistra invece abbiamo posizionato le icone di rimando ai social e un simpatico tasto
+                  in
+                  alto per tornare ad inizio pagina. <br>
+                  Proseguendo abbiamo inserito una sezione 'Servizi' dove potrete elencare quella che è la vostra
+                  attività e tutto
+                  ciò che potrete offrire ai clienti. <br>
+                  Accattivante anche la sezione 'Esperienze' dove abbiamo inserito una animazione con grafico circolare
+                  per
+                  quantificare le vostre conoscenze del settore. <br>
+                  Negli 'Ultimi lavori' e nel 'Portfolio' potrete inserire tutti i vostri lavori eseguiti e che sono
+                  online,
+                  i vostri progetti né più né meno di come stiamo facendo noi su questo sito. <br>
+                  Parte sempre molto importante sono le 'Testimonianze', qui non possono mancare le recensioni dei
+                  vostri clienti
+                  soddisfatti. Anche se questa sezione può non piacere ad alcuni, considerate che è sempre quella che vi
+                  fa salire di
+                  immagine, di reputazione e ha un ritorno economico sempre molto interessante. <br>
+                  Chiude il sito la sezione 'Contatti'. <br>
+                  Considerate sempre che questi siti che noi classifichiamo come 'Portfolio' sono adatti per ogni tipo
+                  di libero
+                  professionista: avvocati, medici, architetti, fotografi, youtuber, influencer ecc.. <br>
+                  Si tratta solo di personalizzarli secondo le vostre esigenze. <br>
+                  Grazie per aver dedicato del tempo a visionare questo progetto ma siamo certi che l'eleganza e lo
+                  stile di questo
+                  sito vi hanno ripagato alla grande!
+               </p>
             </div>
          </div>
       </div>
