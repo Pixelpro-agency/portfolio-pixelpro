@@ -1,30 +1,30 @@
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vedi progetto</title>
- 
-    <!-- font awesome cdn link  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
- 
-    <!-- custom css file link  -->
-    <link rel="stylesheet" href="style.css">
- </head>
- 
- <body>
-    <section class="view-property">
- 
-       <div class="details">
-          <div class="thumb">
-             <div class="big-image">
-                <img src="../img/sito-tatoo.jpg" alt="">
-             </div>
- 
-             <div class="button-container">
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Vedi progetto</title>
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+   <section class="view-property">
+
+      <div class="details">
+         <div class="thumb">
+            <div class="big-image">
+               <img src="../img/sito-tatoo.jpg" alt="">
+            </div>
+
+            <div class="button-container">
                <button type="submit" name="save" class="inline-btn">Condividi</button>
                <a href="https://sito-tatoo.vercel.app/" class="inline-btn">Vedi progetto
                   online</a>
-               <a href="/docs/index.html" class="inline-btn">Torna alla Home</a>
+               <a href="https://pixelpro.cloud" class="inline-btn">Torna alla Home</a>
             </div>
             <div class="row">
                <div class="portfolio-filter">
@@ -36,48 +36,49 @@
                <div class="portfolio-filter">
                   <button type="button" class="filter-btn active classe-btn" data-filter-value="classe">Piano
                      consigliato</button>
-                     <button type="button" class="active" data-filter="basic">medium</button>
-                     <button type="button" class="active" data-filter="basic">plus</button>
+                  <button type="button" class="active" data-filter="basic">medium</button>
+                  <button type="button" class="active" data-filter="basic">plus</button>
                </div>
             </div>
 
-          <div class="row-descrizione">
-             <h3 class="title">Descrizione del Progetto - Sito per una attività di tatuaggi</h3>
-             <p class="description">Questo progetto di sito per tatuatori è l'ideale per tutti coloro che cercano una 
-                piattaforma dinamica ed accattivante per trovare il tatuatore perfetto. <br>               
-                Su questo sito, la sezione 'About' darà al visitatore tutte le informazioni sul team di artisti e le loro 
-                competenze, mentre la galleria sarà una vetrina perfetta per mostrare le opere d'arte eseguite. <br>               
-                Inoltre, le testimonianze dei clienti soddisfatti daranno la sicurezza al visitatore di scegliere il 
-                tatuatore migliore. <br>               
-                La sezione Contatti permetterà di contattarvi direttamente, e grazie agli indirizzi, sarà 
-                semplicissimo trovarvi. <br>              
-                Il video di presentazione all'interno del sito renderà l'esperienza ancora più coinvolgente, 
-                permettendo ai visitatori di conoscere meglio la passione che anima i vostri artisti. <br>              
-                Siamo sicuri che la vostra visita su questo progetto sarà un'esperienza unica e indimenticabile! <br>    
-                Grazie per aver visionato questo progetto!     
-             </p>
+            <div class="row-descrizione">
+               <h3 class="title">Descrizione del Progetto - Sito per una attività di tatuaggi</h3>
+               <p class="description">Questo progetto di sito per tatuatori è l'ideale per tutti coloro che cercano una
+                  piattaforma dinamica ed accattivante per trovare il tatuatore perfetto. <br>
+                  Su questo sito, la sezione 'About' darà al visitatore tutte le informazioni sul team di artisti e le
+                  loro
+                  competenze, mentre la galleria sarà una vetrina perfetta per mostrare le opere d'arte eseguite. <br>
+                  Inoltre, le testimonianze dei clienti soddisfatti daranno la sicurezza al visitatore di scegliere il
+                  tatuatore migliore. <br>
+                  La sezione Contatti permetterà di contattarvi direttamente, e grazie agli indirizzi, sarà
+                  semplicissimo trovarvi. <br>
+                  Il video di presentazione all'interno del sito renderà l'esperienza ancora più coinvolgente,
+                  permettendo ai visitatori di conoscere meglio la passione che anima i vostri artisti. <br>
+                  Siamo sicuri che la vostra visita su questo progetto sarà un'esperienza unica e indimenticabile! <br>
+                  Grazie per aver visionato questo progetto!
+               </p>
             </div>
          </div>
-         
+
          <section class="pricing section-padding" id="pricing">
             <div class="container">
-              <div class="row">
+               <div class="row">
                   <div class="section-title text-align">
-                      <h5 class="sub-title">Prezzi</h5>
-                      <h3 class="main-title">Piani Tariffari</h3>
-                      <ul class="line">
-                          <li></li>
-                          <li></li>
-                          <li></li>
-                      </ul>
+                     <h5 class="sub-title">Prezzi</h5>
+                     <h3 class="main-title">Piani Tariffari</h3>
+                     <ul class="line">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                     </ul>
          </section>
          <div id="cards-container" class="card-container"></div>
          <script>
             var cardsContainer = document.getElementById('cards-container');
-                    fetch('cards.html')
-                .then(response => response.text())
-                .then(html => cardsContainer.innerHTML = html);
-        </script>       
-      </div>      
+            fetch('cards.html')
+               .then(response => response.text())
+               .then(html => cardsContainer.innerHTML = html);
+         </script>
+      </div>
    </section>
 </body>
