@@ -857,11 +857,13 @@ una jpeg, per tornare come prima basta rinominare il file scene.gltf-->
                         <input type="email" name="email" required maxlength="50" placeholder="la tua email" class="box">
                         <input type="number" name="number" required maxlength="10" min="0" max="9999999999"
                             placeholder="il tuo telefono" class="box">
-                        <input type="text" name="richiamare" placeholder="giorno e ora per essere richiamato" class="box">
+                        <input type="text" name="richiamare" placeholder="giorno e ora per essere richiamato"
+                            class="box">
                         <textarea name="msg" class="box" required maxlength="1000" placeholder="il tuo messaggio"
                             cols="30" rows="10"></textarea>
                         <input type="submit" value="invia" name="send" class="btn">
                     </form>
+
                     <div class="faq">
                         <h3 class="title">Domande frequenti</h3>
                         <div class="box active">
@@ -877,24 +879,58 @@ una jpeg, per tornare come prima basta rinominare il file scene.gltf-->
                         </div>
                         <div class="box">
                             <h3>Ho diritto al rimborso se non soddisfatto?</h3>
-                            <p>Certamente. Entro i 30 giorni, in qualunque momento e per qualunque motivo, può 
+                            <p>Certamente. Entro i 30 giorni, in qualunque momento e per qualunque motivo, può
                                 essere chiesto il rimborso della somma totale senza pagamento di alcuna penale</p>
                         </div>
                         <div class="box">
                             <h3>I prezzi sono Iva inclusa o esclusa?</h3>
-                            <p>I prezzi sono tutti IVA esclusa. Al momento del pagamento viene emessa fattura 
+                            <p>I prezzi sono tutti IVA esclusa. Al momento del pagamento viene emessa fattura
                                 col totale aggiornato compresa IVA</p>
                         </div>
                         <div class="box">
                             <h3>Posso avere una assistenza dopo i 30 giorni?</h3>
                             <p>Certamente, l'assistenza è sempre garantita per qualunque problema inerente al
                                 sito online. Per assistenza extra il prezzo verrà quantificato di volta in
-                                volta oppure potete usufruire dei nostri pacchetti di assistenza trimestrali, 
+                                volta oppure potete usufruire dei nostri pacchetti di assistenza trimestrali,
                                 semestrali o annuali</p>
                         </div>
                     </div>
                 </div>
+                <script>
+                    // Ottenere tutti gli elementi h3 delle FAQ
+                    const faqTitles = document.querySelectorAll('.contact .row .faq .box h3');
+
+                    // Aggiungere l'evento di clic a ciascun titolo delle FAQ
+                    faqTitles.forEach(faqTitle => {
+                        faqTitle.addEventListener('click', () => {
+                            // Ottenere il genitore dell'elemento h3 (la casella delle FAQ)
+                            const faqBox = faqTitle.parentElement;
+
+                            // Aggiungere o rimuovere la classe 'active' per mostrare o nascondere il contenuto
+                            faqBox.classList.toggle('active');
+                        });
+                    });
+
+                </script>
+
             </section>
+
+            <div class="piepagina">
+                <img src="img/Logo.png" class="logo" alt=""><p>&copy; copyright @ 2023 by pixelpro | all rights reseved!</p>
+    
+                <ul class="links-container">
+                    <li class="link-items"><a href="#home" class="links">Home</a></li>
+                    <li class="link-items"><a href="#progetti" class="links">Progetti</a></li>
+                    <li class="link-items"><a href="#progettionline" class="links">Progetti online</a></li>
+                    <li class="link-items"><a href="#skills" class="links">Skills</a></li>
+                    <li class="link-items"><a href="#contatti" class="links">Contatti</a></li>
+                </ul>   
+                <div class="toggle-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
 
             <!-- three js -->
 
