@@ -37,11 +37,11 @@
             <img src="img/Logo.png" class="logo" alt="">
 
             <ul class="links-container">
-                <li class="link-items"><a href="#hero-section" class="links">Home</a></li>
-                <li class="link-items"><a href="#project-section" class="links">Progetti</a></li>
-                <li class="link-items"><a href="#projectonline-section" class="links">Progetti online</a></li>
-                <li class="link-items"><a href="#skills-section" class="links">Skills</a></li>
-                <li class="link-items"><a href="#contact-section" class="links">Contatti</a></li>
+                <li class="link-items"><a href="#home" class="links">Home</a></li>
+                <li class="link-items"><a href="#progetti" class="links">Progetti</a></li>
+                <li class="link-items"><a href="#progettionline" class="links">Progetti online</a></li>
+                <li class="link-items"><a href="#skills" class="links">Skills</a></li>
+                <li class="link-items"><a href="#contatti" class="links">Contatti</a></li>
             </ul>
 
             <!-- toggle btn -->
@@ -55,15 +55,14 @@
 
         <!-- sezione hero -->
 
-        <main id="hero-section">
-
+        <main id="home">
             <div class="hero-content">
                 <img src="img/pc-per-ufficio.jpg" alt="Immagine" class="hero-image">
                 <div class="text-overlay">
                     <h1 class="hero-headline">Creatività Digitale Al Tuo Servizio</h1>
                     <p class="hero-secondary-line">Il futuro del tuo business dipende dalla tua presenza online, creala
                         col nostro team</p>
-                  <!-- <p class="mouse">→ muovi con il mouse ←</p> -->
+                    <!-- <p class="mouse">→ muovi con il mouse ←</p> -->
                 </div>
             </div>
 
@@ -83,9 +82,9 @@
     per cambiare l'immagine di copertina ho rinominato il file scene.gltf in rinominato.gltf e ho inserito
 una jpeg, per tornare come prima basta rinominare il file scene.gltf-->
 
-            <section id="project-section">
+            <section id="progetti">
                 <div class="contenitore">
-                    <h1 class="section-title">Progetti</h1>
+                    <h1 class="section-title" data-text="progetti">Progetti</h1>
                     <p class="section-info">Alcuni dei nostri progetti, realizzati in questi ultimi anni,
                         lavorando con un team fantastico. Da qui puoi prendere delle idee per cominciare
                         a costruire con noi il tuo futuro sul mondo</p>
@@ -430,9 +429,9 @@ una jpeg, per tornare come prima basta rinominare il file scene.gltf-->
 
             <!-- sezione progetti online-->
 
-            <section id="projectonline-section">
+            <section id="progettionline">
                 <div class="titolo">
-                    <h1 class="section-title">Progetti online</h1>
+                    <h1 class="section-title" data-text="online">Progetti online</h1>
                     <p class="section-info">Qui trovi una raccolta di lavori eseguiti caratterizzati
                         da design grafici accattivanti. Esplora una vasta gamma di progetti online che
                         ti permetteranno di valutare la nostra esperienza e creatività. Scoprirai i nostri
@@ -486,9 +485,9 @@ una jpeg, per tornare come prima basta rinominare il file scene.gltf-->
 
             <!-- skills -->
 
-            <section id="skills-section">
+            <section id="skills">
                 <div class="skills">
-                    <h2 class="title">Skills</h2>
+                    <h1 class="section-title" data-text="skills">skills</h1>
                 </div>
 
                 <div class="contenitori-skills">
@@ -818,6 +817,7 @@ una jpeg, per tornare come prima basta rinominare il file scene.gltf-->
                         </div>
                     </div>
                 </div>
+
                 <script>
                     let imgBx = document.querySelectorAll('.imgBx');
                     let contentBx = document.querySelectorAll('.contentBx');
@@ -836,122 +836,65 @@ una jpeg, per tornare come prima basta rinominare il file scene.gltf-->
                         })
                     }
                 </script>
-
             </section>
 
-            <!--
-   education and experiences
-    <div class="edu-exp">
-        <h2 class="title">Education & experience</h2>
-
-        <div class="edu-exp-container">
-            <div class="edu-exp-card">
-                <i class="fa-solid fa-suitcase card-icon"></i>
-                <span class="time">2021 - PRESENT</span>
-                <h3 class="card-title">Web Developer - <span>Company Name</span></h3>
-
-                <p class="card-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tortor nibh,
-                    tristique at diam et, venenatis cursus felis. Aenean arcu nulla, pharetra</p>
-            </div>
-            <div class="edu-exp-card">
-                <i class="fa-solid fa-suitcase card-icon"></i>
-                <span class="time">2018 - 2021</span>
-                <h3 class="card-title">Web Developer - <span>Company Name</span></h3>
-
-                <p class="card-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tortor nibh,
-                    tristique at diam et, venenatis cursus felis. Aenean arcu nulla, pharetra</p>
-            </div>
-            <div class="edu-exp-card">
-                <i class="fa-solid fa-suitcase card-icon"></i>
-                <span class="time">2014 - 2018</span>
-                <h3 class="card-title">Web Developer - <span>Company Name</span></h3>
-
-                <p class="card-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tortor nibh,
-                    tristique at diam et, venenatis cursus felis. Aenean arcu nulla, pharetra</p>
-            </div>
-            <div class="edu-exp-card">
-                <i class="fa-solid fa-graduation-cap card-icon"></i>
-                <span class="time">2014</span>
-                <h3 class="card-title">Degree - <span>University Name</span></h3>
-
-                <p class="card-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tortor nibh,
-                    tristique at diam et, venenatis cursus felis. Aenean arcu nulla, pharetra</p>
-            </div>
-            <div class="edu-exp-card">
-                <i class="fa-solid fa-graduation-cap card-icon"></i>
-                <span class="time">2011</span>
-                <h3 class="card-title">Degree - <span>University Name</span></h3>
-
-                <p class="card-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tortor nibh,
-                    tristique at diam et, venenatis cursus felis. Aenean arcu nulla, pharetra</p>
-            </div>
-            <div class="edu-exp-card">
-                <i class="fa-solid fa-graduation-cap card-icon"></i>
-                <span class="time">2008</span>
-                <h3 class="card-title">Degree - <span>University Name</span></h3>
-
-                <p class="card-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tortor nibh,
-                    tristique at diam et, venenatis cursus felis. Aenean arcu nulla, pharetra</p>
-            </div>
-        </div>
-
-    </div>
-
-    </section>
-
-    contact section
-    <section id="contact-section">
-
-        <h1 class="section-title" data-text="contact">let's chat</h1>
-        <p class="section-info">You can fill this form to contact me about any questions you have. Feel free to ask any
-            query. I would love to hear about your idea and work with you. Let’s talk</p>
-
-        <div class="contact-container">
-            <div class="contact-details">
-                <div class="contact-card">
-                    <i class="fa-solid fa-location-dot card-icon"></i>
-                    <span class="card-title">Address</span>
-                    <p class="card-info">123 Street, New Delhi, Delhi , India 110000</p>
+            <section id="contatti">
+                <div class="scantina">
+                    <h1 class="section-title" data-text="contatto">Chiamaci in azione</h1>
+                    <p class="section-info">Compila questo modulo per contattarci segnalando
+                        nell'apposito campo giorno e ora in cui preferiresti essere richiamato.
+                        Se lascerai questo campo vuoto ti risponderemo solo con email.
+                        Sentiti libero di fare qualsiasi domanda.
+                        Ci piacerebbe conoscere le tue idee e lavorare con te.</p>
                 </div>
-                <div class="contact-card">
-                    <i class="fa-solid fa-envelope card-icon"></i>
-                    <span class="card-title">Mail Me</span>
-                    <p class="card-info">example@gmail.com , contact@portfolio.com</p>
-                </div>
-                <div class="contact-card">
-                    <i class="fa-solid fa-phone card-icon"></i>
-                    <span class="card-title">Phone No.</span>
-                    <p class="card-info">9988556677, 9988665544</p>
-                </div>
+            </section>
 
-                social links
-                <div class="social-links-container">
-                    <a href="#" class="social-links"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="#" class="social-links"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="#" class="social-links"><i class="fa-brands fa-twitter"></i></a>
-                    <a href="#" class="social-links"><i class="fa-brands fa-youtube"></i></a>
-                    <a href="#" class="social-links"><i class="fa-brands fa-github"></i></a>
-                </div>
-            </div>
-
-            contact form
-            <div class="contact-form">
-                <form>
-                    <div class="name-email-input">
-                        <input type="text" placeholder="Your Name" required>
-                        <input type="email" placeholder="Your Email" required>
+            <section class="contact" id="contact">
+                <div class="row">
+                    <form action="" method="post">
+                        <h3>inviaci un messaggio</h3>
+                        <input type="text" name="name" required maxlength="50" placeholder="il tuo nome" class="box">
+                        <input type="email" name="email" required maxlength="50" placeholder="la tua email" class="box">
+                        <input type="number" name="number" required maxlength="10" min="0" max="9999999999"
+                            placeholder="il tuo telefono" class="box">
+                        <input type="text" name="richiamare" placeholder="giorno e ora per essere richiamato" class="box">
+                        <textarea name="msg" class="box" required maxlength="1000" placeholder="il tuo messaggio"
+                            cols="30" rows="10"></textarea>
+                        <input type="submit" value="invia" name="send" class="btn">
+                    </form>
+                    <div class="faq">
+                        <h3 class="title">Domande frequenti</h3>
+                        <div class="box active">
+                            <h3>Quanto tempo occorre per avere il sito online?
+                            </h3>
+                            <p>Dalla firma dell'incarico che coincide col pagamento dei servizi, il sito viene
+                                progettato, costruito e messo online entro 30 giorni</p>
+                        </div>
+                        <div class="box">
+                            <h3>Come avviene il pagamento?</h3>
+                            <p>Il pagamento viene effettuato in una unica soluzione anticipata al momento della
+                                firma dell'incarico</p>
+                        </div>
+                        <div class="box">
+                            <h3>Ho diritto al rimborso se non soddisfatto?</h3>
+                            <p>Certamente. Entro i 30 giorni, in qualunque momento e per qualunque motivo, può 
+                                essere chiesto il rimborso della somma totale senza pagamento di alcuna penale</p>
+                        </div>
+                        <div class="box">
+                            <h3>I prezzi sono Iva inclusa o esclusa?</h3>
+                            <p>I prezzi sono tutti IVA esclusa. Al momento del pagamento viene emessa fattura 
+                                col totale aggiornato compresa IVA</p>
+                        </div>
+                        <div class="box">
+                            <h3>Posso avere una assistenza dopo i 30 giorni?</h3>
+                            <p>Certamente, l'assistenza è sempre garantita per qualunque problema inerente al
+                                sito online. Per assistenza extra il prezzo verrà quantificato di volta in
+                                volta oppure potete usufruire dei nostri pacchetti di assistenza trimestrali, 
+                                semestrali o annuali</p>
+                        </div>
                     </div>
-                    <input type="text" placeholder="Subject" required>
-                    <textarea placeholder="Message"></textarea>
-                    <button class="btn light" type="submit">send message</button>
-                </form>
-            </div>
-        </div>
-
-    </section>
-
-    <p class="credit">Designed by Pixelpro Web Agency </p>
--->
+                </div>
+            </section>
 
             <!-- three js -->
 

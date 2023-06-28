@@ -36,7 +36,11 @@ html {
 body {
    background-image: url(../img/images.jpeg);
    overflow: hidden;
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
 }
+
 
 section {
    padding: 3rem 2rem;
@@ -47,19 +51,21 @@ section {
 .button-container {
    display: flex;
    justify-content: center;
-   gap: 10px; /* Regola lo spazio desiderato */
+   gap: 10px;
+   /* Regola lo spazio desiderato */
    align-items: center;
    margin-top: 20px;
 }
 
 .button-container button,
 .button-container a {
-   margin-right: 10px; /* Regola il margine desiderato */
+   margin-right: 10px;
+   /* Regola il margine desiderato */
 }
 
 .button-container form {
    margin-right: 10px;
- }
+}
 
 .inline-btn {
    font-size: 1.5rem;
@@ -134,6 +140,7 @@ section {
 .portfolio-filter button[data-filter="ultra"] {
    color: var(--main-color);
 }
+
 .portfolio-filter button[data-filter="ultra"]:hover {
    /* Imposta il colore di sfondo iniziale */
    background-color: var(--white);
@@ -142,6 +149,7 @@ section {
 .portfolio-filter button[data-filter="basic"] {
    color: var(--main-color);
 }
+
 .portfolio-filter button[data-filter="basic"]:hover {
    /* Imposta il colore di sfondo iniziale */
    background-color: var(--white);
@@ -150,6 +158,7 @@ section {
 .portfolio-filter button[data-filter="medium"] {
    color: var(--main-color);
 }
+
 .portfolio-filter button[data-filter="medium"]:hover {
    /* Imposta il colore di sfondo iniziale */
    background-color: var(--white);
@@ -229,152 +238,152 @@ section {
 
 /*===== Google Fonts =====*/
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
 /*===== Global CSS =====*/
-html
-{
-    scroll-behavior: smooth;
-}
-:root
-{
-    --main-color:#00a78e;
-    --shadow-black-100:0 5px 15px rgba(0,0,0,0.2);
-    --black-900:#000;
-    --black-400:#646f87;
-    --black-100:#f7f7f7;
-    --white:#fff;
-    --black-alpha-100:rgba(0,0,0,.05);
-}
-body
-{
-    font-family: "Poppins";
-    font-size: 16px;
-    font-weight: normal;
-    overflow-x: hidden;
-    background-color: var(--white);
-}
-*
-{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-}
-ul
-{
-    list-style: none;
-}
-img
-{
-    vertical-align: middle;
-}
-.container
-{
-    max-width: 1140px;
-    margin: auto;
-}
-.row
-{
-    display: flex;
-    flex-wrap: wrap;
-}
-.justify-content-center
-{
-    justify-content: center;
-}
-.justify-content-between
-{
-    justify-content: space-between;
-}
-.align-items-center
-{
-    align-items: center;
-}
-.btn-1
-{
-    background-color: var(--main-color);
-    padding: 15px 40px;
-    border: none;
-    color: var(--white);
-    border-radius: 5px;
-    font-size: 16px;
-    text-transform: capitalize;
-    font-weight: 600;
-    transition: all 0.3s ease-out;
-}
-.btn-1:hover
-{
-    color: var(--white);
-    background-color: rgba(0,167,142,0.7);
+html {
+   scroll-behavior: smooth;
 }
 
-.btn-2
-{
-    background-color: var(--white);
-    padding: 15px 40px;
-    border: none;
-    color: var(--main-color);
-    border-radius: 5px;
-    font-size: 16px;
-    text-transform: capitalize;
-    font-weight: 600;
-    border: 1px solid var(--main-color);
-    transition: all 0.3s ease-out;
+:root {
+   --main-color: #00a78e;
+   --shadow-black-100: 0 5px 15px rgba(0, 0, 0, 0.2);
+   --black-900: #000;
+   --black-400: #646f87;
+   --black-100: #f7f7f7;
+   --white: #fff;
+   --black-alpha-100: rgba(0, 0, 0, .05);
 }
-.btn-2:hover
-{
-    color: var(--white);
-    background-color: var(--main-color);
-    border: none;
+
+body {
+   font-family: "Poppins";
+   font-size: 16px;
+   font-weight: normal;
+   overflow-x: hidden;
+   background-color: var(--white);
 }
-.section-padding
-{
-    padding: 20px 0;
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   text-decoration: none;
 }
-.text-align
-{
-    text-align: center;
+
+ul {
+   list-style: none;
 }
-.section-title
-{
-    flex: 0 0 100%;
-    max-width: 100%;
-    margin-bottom: 30px;
+
+img {
+   vertical-align: middle;
 }
-.section-title .sub-title
-{
-    font-size: 20px;
-    font-weight: 600;
-    color: var(--main-color);
+
+.container {
+   max-width: 1140px;
+   margin: auto;
 }
-.section-title .main-title
-{
-    font-size: 35px;
-    font-weight: 600;
-    margin-top: 10px;
+
+.row {
+   display: flex;
+   flex-wrap: wrap;
 }
-.section-title .line 
-{
-    padding-top: 0px;
+
+.justify-content-center {
+   justify-content: center;
 }
-.section-title .line li
-{
-    display: inline-block;
-    background-color: var(--main-color);
-    border-radius: 50px;
-    height: 3px;
+
+.justify-content-between {
+   justify-content: space-between;
 }
-.section-title .line li:nth-of-type(1)
-{
-    width: 64px;
+
+.align-items-center {
+   align-items: center;
 }
-.section-title .line li:nth-of-type(2)
-{
-    width: 10px;
+
+.btn-1 {
+   background-color: var(--main-color);
+   padding: 15px 40px;
+   border: none;
+   color: var(--white);
+   border-radius: 5px;
+   font-size: 16px;
+   text-transform: capitalize;
+   font-weight: 600;
+   transition: all 0.3s ease-out;
 }
-.section-title .line li:nth-of-type(3)
-{
-    width: 7px;
+
+.btn-1:hover {
+   color: var(--white);
+   background-color: rgba(0, 167, 142, 0.7);
 }
+
+.btn-2 {
+   background-color: var(--white);
+   padding: 15px 40px;
+   border: none;
+   color: var(--main-color);
+   border-radius: 5px;
+   font-size: 16px;
+   text-transform: capitalize;
+   font-weight: 600;
+   border: 1px solid var(--main-color);
+   transition: all 0.3s ease-out;
+}
+
+.btn-2:hover {
+   color: var(--white);
+   background-color: var(--main-color);
+   border: none;
+}
+
+.section-padding {
+   padding: 20px 0;
+}
+
+.text-align {
+   text-align: center;
+}
+
+.section-title {
+   flex: 0 0 100%;
+   max-width: 100%;
+   margin-bottom: 30px;
+}
+
+.section-title .sub-title {
+   font-size: 20px;
+   font-weight: 600;
+   color: var(--main-color);
+}
+
+.section-title .main-title {
+   font-size: 35px;
+   font-weight: 600;
+   margin-top: 10px;
+}
+
+.section-title .line {
+   padding-top: 0px;
+}
+
+.section-title .line li {
+   display: inline-block;
+   background-color: var(--main-color);
+   border-radius: 50px;
+   height: 3px;
+}
+
+.section-title .line li:nth-of-type(1) {
+   width: 64px;
+}
+
+.section-title .line li:nth-of-type(2) {
+   width: 10px;
+}
+
+.section-title .line li:nth-of-type(3) {
+   width: 7px;
+}
+
 /*===== pricing =====*/
 
 .card-container {
@@ -384,108 +393,107 @@ img
    gap: 5px;
 }
 
-.pricing-item
-{
-    flex: 0 0 33.33%;
-    max-width: 33.33%;
-    padding: 20px;
-    display: flex;
-    flex-wrap: wrap;
+.pricing-item {
+   flex: 0 0 33.33%;
+   max-width: 33.33%;
+   padding: 20px;
+   display: flex;
+   flex-wrap: wrap;
 }
-.pricing-plan
-{
-    box-shadow: var(--shadow-black-100);
-    border-radius: 10px;
-    overflow: hidden;
-    width: 100%;
+
+.pricing-plan {
+   box-shadow: var(--shadow-black-100);
+   border-radius: 10px;
+   overflow: hidden;
+   width: 100%;
 }
-.pricing-plan .pricing-header
-{
-    padding: 20px 30px;
-    border-bottom: 1px solid var(--black-100);
-    position: relative;
+
+.pricing-plan .pricing-header {
+   padding: 20px 30px;
+   border-bottom: 1px solid var(--black-100);
+   position: relative;
 }
-.pricing-plan .pricing-header h3
-{
-    font-size: 20px;
-    color: var(--black-900);
-    font-weight: 500;
-    text-transform: capitalize;
-    margin: 0;
+
+.pricing-plan .pricing-header h3 {
+   font-size: 20px;
+   color: var(--black-900);
+   font-weight: 500;
+   text-transform: capitalize;
+   margin: 0;
 }
-.best-value
-{
-    position: absolute;
-    right: -35%;
-    top: 50%;
-    width: 100%;
-    color: var(--white);
-    background-color: var(--main-color);
-    text-transform: capitalize;
-    transform: rotate(50deg);
-    font-size: 20px;
-    text-align: center;
-    padding: 20px 0;
-    font-family: Arial;
+
+.best-value {
+   position: absolute;
+   right: -35%;
+   top: 50%;
+   width: 100%;
+   color: var(--white);
+   background-color: var(--main-color);
+   text-transform: capitalize;
+   transform: rotate(50deg);
+   font-size: 20px;
+   text-align: center;
+   padding: 20px 0;
+   font-family: Arial;
 }
-.pricing-plan .pricing-price
-{
-    padding: 40px 30px;
-    display: flex;
-    line-height: 0.7;
+
+.pricing-plan .pricing-price {
+   padding: 40px 30px;
+   display: flex;
+   line-height: 0.7;
 }
-.pricing-plan .pricing-price .currency
-{
-    font-size: 16px;
-    font-weight: 300;
-    color: var(--black-400);
-    margin-right: 5px;
-    align-self: flex-start;
+
+.pricing-plan .pricing-price .currency {
+   font-size: 16px;
+   font-weight: 300;
+   color: var(--black-400);
+   margin-right: 5px;
+   align-self: flex-start;
 }
-.pricing-plan .pricing-price .price 
-{
-    font-size: 50px;
-    font-weight: 700;
-    color: var(--main-color);
+
+.pricing-plan .pricing-price .price {
+   font-size: 50px;
+   font-weight: 700;
+   color: var(--main-color);
 }
-.pricing-plan .pricing-price .period
-{
-    font-size: 14px;
-    font-weight: 300;
-    color: var(--black-400);
-    margin-right: 5px;
-    align-self: flex-end;
-    text-transform: uppercase;
+
+.pricing-plan .pricing-price .period {
+   font-size: 14px;
+   font-weight: 300;
+   color: var(--black-400);
+   margin-right: 5px;
+   align-self: flex-end;
+   text-transform: uppercase;
 }
-.pricing-plan .pricing-body
-{
-    padding: 0 30px;
+
+.pricing-plan .pricing-body {
+   padding: 0 30px;
 }
-.pricing-plan .pricing-body ul li
-{
-    font-size: 16px;
-    font-weight: 300;
-    color: var(--black-400);
-    padding: 10px 0 10px 30px;
-    border-bottom: 1px solid var(--black-alpha-100);
-    line-height: 26px;
-    position: relative;
+
+.pricing-plan .pricing-body ul li {
+   font-size: 16px;
+   font-weight: 300;
+   color: var(--black-400);
+   padding: 10px 0 10px 30px;
+   border-bottom: 1px solid var(--black-alpha-100);
+   line-height: 26px;
+   position: relative;
 }
-.pricing-plan .pricing-body ul li:last-child
-{
-    border-bottom: none;
+
+.pricing-plan .pricing-body ul li:last-child {
+   border-bottom: none;
 }
-.pricing-plan .pricing-body ul li i
-{
-    color: var(--main-color);
-    position: absolute;
-    left: 0;
-    top: 12px;
+
+.pricing-plan .pricing-body ul li i {
+   color: var(--main-color);
+   position: absolute;
+   left: 0;
+   top: 12px;
 }
-.pricing-plan .pricing-footer
-{
-    padding: 40px;
-    text-align: center;
+
+.pricing-plan .pricing-footer {
+   padding: 40px;
+   text-align: center;
 }
 
 .listings .box-container {
