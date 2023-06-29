@@ -44,7 +44,7 @@ document.getElementById('contact').addEventListener('submit', function (event) {
   // Prepara i dati per l'invio
   var dati = {
     service_id: 'service_urqzcug',
-    template_id: 'template_0yl9ec6git',
+    template_id: 'template_9hbs0me',
     user_id: 'user_T0eewF6hqySzYujwQ', // Chiave pubblica API
     template_params: {
       nome: nome,
