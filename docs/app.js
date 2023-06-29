@@ -91,9 +91,3 @@ toggleBtn.addEventListener('click', () => {
     toggleBtn.classList.toggle('active');
     linksContainer.classList.toggle('active');
 })
-
-document.querySelectorAll('.contact .row .faq .box h3').forEach(faqBox => {
-    faqBox.onclick = () =>{
-       faqBox.parentElement.classList.toggle('active');
-    }
- });
