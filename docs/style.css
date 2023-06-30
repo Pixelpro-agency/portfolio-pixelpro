@@ -59,6 +59,7 @@ body {
 /* navbar */
 
 nav {
+    background-color: var(--main-color);
     top: 0;
     width: 100%;
     height: 100px;
@@ -157,11 +158,11 @@ per l'immagine scene.gltf - tutti gli altri della sezione hero-section sono da c
 
 .text-overlay {
     position: absolute;
-    top: 50%;
+    top: 25%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    color: white;
+    color: var(--main-color);
     z-index: 1;
 }
 
