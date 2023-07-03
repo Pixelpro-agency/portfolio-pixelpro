@@ -118,7 +118,7 @@ document.getElementById('contact').addEventListener('submit', function(event) {
     };
 
     // Invia l'email tramite EmailJS
-    email.send('default_service', 'template_9hbs0me', dati)
+    email.send('service_9f61txk', 'template_sx8rlqg', dati)
         .then(function (response) {
             console.log('Email inviata con successo!', response);
             // Aggiungi qui la logica per mostrare un messaggio di conferma o reindirizzare l'utente a una pagina di successo
