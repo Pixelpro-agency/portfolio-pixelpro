@@ -15,7 +15,7 @@ let progressTrack = [...document.querySelectorAll('.progress-track')];
 
 projectCards.map((project, i) => {
     project.addEventListener('click', () => {
-        
+
         projectCards.map(card => card.classList.remove('active'));
 
         project.classList.add('active');
@@ -54,13 +54,13 @@ filters.map((btn, i) => {
         let tag = btn.getAttribute('data-filter-value');
 
         projectCards.map(project => {
-            if(tag == 'all'){
+            if (tag == 'all') {
                 project.style.display = null;
             }
-            else if(!project.getAttribute('data-tags').includes(tag)){
+            else if (!project.getAttribute('data-tags').includes(tag)) {
                 project.style.display = 'none';
             }
-            else{
+            else {
                 project.style.display = null;
             }
         })
@@ -75,9 +75,9 @@ setUpProjectInfo(projects[0])
 const navbar = document.querySelector('nav')
 
 window.addEventListener('scroll', () => {
-    if(scrollY > 195){
+    if (scrollY > 195) {
         navbar.classList.add('bg');
-    } else{
+    } else {
         navbar.classList.remove('bg');
     }
 })
@@ -92,14 +92,38 @@ toggleBtn.addEventListener('click', () => {
     linksContainer.classList.toggle('active');
 })
 
-function SendMail() {
-    var params = {
-        from_name : document.getElementById("fullname").value,
-        email_id : document.getElementById("email_id").value,
-        message : document.getElementById("message").value
-    }
-    emailjs.send("service_9f61txk", "template_sx8rlqg", params).then
-    (function (res) {
-        alert("Success! " + res.status);
-    })
-}
+// Aggiungi l'evento di invio del modulo
+document.getElementById('contact').addEventListener('submit', function(event) {
+    event.preventDefault(); // Interrompi l'invio del modulo predefinito
+
+    // Ottieni i valori dei campi del modulo
+    var nome = document.getElementsByName('name')[0].value;
+    var email = document.getElementsByName('email')[0].value;
+    var telefono = document.getElementsByName('number')[0].value;
+    var giornoOra = document.getElementsByName('richiamare')[0].value;
+    var messaggio = document.getElementsByName('msg')[0].value;
+
+    // Prepara i dati per l'invio
+    var dati = {
+        service_id: 'service_9f61txk',
+        template_id: 'template_sx8rlqg',
+        user_id: 'user_hH0EIrxAH2qrDt5xj', // Chiave pubblica API
+        template_params: {
+            nome: nome,
+            email: email,
+            telefono: telefono,
+            giornoOra: giornoOra,
+            messaggio: messaggio
+        }
+    };
+
+    // Invia l'email tramite EmailJS
+    email.send('default_service', 'template_9hbs0me', dati)
+        .then(function (response) {
+            console.log('Email inviata con successo!', response);
+            // Aggiungi qui la logica per mostrare un messaggio di conferma o reindirizzare l'utente a una pagina di successo
+        }, function (error) {
+            console.log('Errore nell\'invio dell\'email:', error);
+            // Aggiungi qui la logica per mostrare un messaggio di errore all'utente
+        });
+});
