@@ -9,6 +9,13 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("hH0EIrxAH2qrDt5xj");
+        })();
+    </script>
     <title>PixelPro Web Agency</title>
 
     <!-- google font CDN -->
@@ -35,7 +42,10 @@
         <!-- navbar -->
 
         <nav>
-            <img src="img/Logo.png" class="logo" alt="">
+            <div class="intestazione">
+                <img src="img/Logo.png" class="logo" alt="">
+                <p>Pixelpro | Web Agency</p>
+            </div>
 
             <ul class="links-container">
                 <li class="link-items"><a href="#home" class="links">Home</a></li>
@@ -58,30 +68,18 @@
 
         <main id="home">
             <div class="hero-content">
-                <img src="img/arredo-ufficio.webp" alt="Immagine" class="hero-image">
+                <picture>
+                    <source srcset="img/arredo-ufficio.webp" type="image/webp">
+                    <source srcset="img/pc-per-ufficio.jpg" type="image/jpeg">
+                    <img src="img/pc-per-ufficio.jpg" alt="Arredo ufficio" class="hero-image">
+                </picture>
+
                 <div class="text-overlay">
                     <h1 class="hero-headline">Creatività Digitale Al Tuo Servizio</h1>
                     <p class="hero-secondary-line">Il futuro del tuo business dipende dalla tua presenza online, creala
                         col nostro team</p>
-                    <!-- <p class="mouse">→ muovi con il mouse ←</p> -->
                 </div>
             </div>
-
-
-            <!--         
-            <div class="hero-content">
-                <h1 class="hero-headline">Creatività Digitale Al Tuo Servizio</h1>
-                <p class="hero-secondary-line">Il futuro del tuo business dipende dalla tua presenza online, creala col
-                    nostro team</p>
-                <p class="mouse">→ muovi con il mouse ←</p>
-            </div>
-        </main>
-
-    </header>
-
-     sezione progetti 
-    per cambiare l'immagine di copertina ho rinominato il file scene.gltf in rinominato.gltf e ho inserito
-una jpeg, per tornare come prima basta rinominare il file scene.gltf-->
 
             <section id="progetti">
                 <div class="contenitore">
@@ -448,7 +446,7 @@ una jpeg, per tornare come prima basta rinominare il file scene.gltf-->
                         </div>
 
                         <div class="swiper-slide" style="background-image: url(img/maryhost.png);">
-                            <a href="https://pixelpro-agency.github.io/Personal-Portfolio-Mary/" target="_blank">
+                            <a href="https://mary-host.com" target="_blank">
                                 <i class="fa fa-search"></i>
                             </a>
                         </div>
@@ -460,7 +458,7 @@ una jpeg, per tornare come prima basta rinominare il file scene.gltf-->
                         </div>
 
                         <div class="swiper-slide" style="background-image: url(img/maryhost.png);">
-                            <a href="https://pixelpro-agency.github.io/Personal-Portfolio-Mary/" target="_blank">
+                            <a href="https://mary-host.com" target="_blank">
                                 <i class="fa fa-search"></i>
                             </a>
                         </div>
@@ -472,7 +470,7 @@ una jpeg, per tornare come prima basta rinominare il file scene.gltf-->
                         </div>
 
                         <div class="swiper-slide" style="background-image: url(img/maryhost.png);">
-                            <a href="https://pixelpro-agency.github.io/Personal-Portfolio-Mary/" target="_blank">
+                            <a href="https://mary-host.com" target="_blank">
                                 <i class="fa fa-search"></i>
                             </a>
                         </div>
