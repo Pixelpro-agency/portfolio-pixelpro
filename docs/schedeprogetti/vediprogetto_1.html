@@ -6,6 +6,7 @@
 
    <!-- font awesome cdn link  -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
    <!-- custom css file link  -->
    <link rel="stylesheet" href="style.css">
@@ -20,23 +21,55 @@
                <img src="../img/amazon-ecommerce.jpg" alt="">
             </div>
 
+            <div class="button-condividi">
+               <div id="fb-root"></div>
+               <script async defer crossorigin="anonymous"
+                  src="https://connect.facebook.net/it_IT/sdk.js#xfbml=1&version=v11.0" nonce="N1jYCEIF"></script>
+               <div class="fb-share-button" data-href="www.pixelpro.cloud" data-layout="button" data-size="small">
+                  <a target="_blank"
+                     href="https://www.facebook.com/sharer/sharer.php?u=www.pixelpro.cloud&amp;src=sdkpreparse"
+                     class="fb-xfbml-parse-ignore">Condividi</a>
+               </div>
+               <script src="https://platform.linkedin.com/in.js" type="text/javascript">lang: it_IT</script>
+               <script type="IN/Share" data-url="www.pixelpro.cloud"></script>
+               <a class="twitter-share-button"
+                  href="https://twitter.com/intent/tweet?url=www.pixelpro.cloud&text=Una pagina che ti potrebbe interessare"
+                  data-size="large">Tweet</a>
+               <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+               <button class="whatsapp-button">
+                  <i class="fab fa-whatsapp"></i>
+                  WhatsApp
+              </button>
+               <a href="https://api.whatsapp.com/send?text=Una pagina che ti potrebbe interessare%20www.pixelpro.cloud"
+                  target="_blank"></a>
+                  <button class="telegram-button">
+                     <i class="fab fa-telegram"></i>
+                     Telegram
+                 </button>
+               <a href="https://t.me/share/url?url=www.pixelpro.cloud&text=Una pagina che ti potrebbe interessare"
+                  target="_blank"></a>
+            </div>
+
             <div class="button-container">
-               <button type="submit" name="save" class="inline-btn">Condividi</button>
                <a href="https://amazon-ecommerce-lovat.vercel.app/" class="inline-btn">Vedi progetto online</a>
                <a href="https://pixelpro.cloud" class="inline-btn">Torna alla Home</a>
             </div>
             <div class="row">
                <div class="portfolio-filter">
-                  <button type="button" class="filter-btn active categorie-btn" data-filter-value="categorie">Categorie</button>
-                  <button type="button" class="active" data-filter-value="react" onclick="window.location.href='../vendita/vendita.html'">vendita</button>
-                  <button type="button" class="active" data-filter-value="fullstack" onclick="window.location.href='../ecommerce/ecommerce.html'">ecommerce</button>
+                  <button type="button" class="filter-btn active categorie-btn"
+                     data-filter-value="categorie">Categorie</button>
+                  <button type="button" class="active" data-filter-value="react"
+                     onclick="window.location.href='../vendita/vendita.html'">vendita</button>
+                  <button type="button" class="active" data-filter-value="fullstack"
+                     onclick="window.location.href='../ecommerce/ecommerce.html'">ecommerce</button>
                </div>
                <div class="portfolio-filter">
-                  <button type="button" class="filter-btn active classe-btn" data-filter-value="classe">Piano consigliato</button>
+                  <button type="button" class="filter-btn active classe-btn" data-filter-value="classe">Piano
+                     consigliato</button>
                   <button type="button" data-filter="ultra">ultra</button>
                </div>
             </div>
-            
+
             <div class="row-descrizione">
                <h3 class="title">Descrizione del Progetto - Sito ecommerce per la vendita di cosmetici</h3>
                <p class="description">In questo progetto è stato realizzato un fantastico sito Web di e-commerce per
@@ -58,26 +91,26 @@
                </p>
             </div>
          </div>
-         
+
          <section class="pricing section-padding" id="pricing">
             <div class="container">
-              <div class="row">
+               <div class="row">
                   <div class="section-title text-align">
-                      <h5 class="sub-title">Prezzi</h5>
-                      <h3 class="main-title">Piani Tariffari</h3>
-                      <ul class="line">
-                          <li></li>
-                          <li></li>
-                          <li></li>
-                      </ul>
+                     <h5 class="sub-title">Prezzi</h5>
+                     <h3 class="main-title">Piani Tariffari</h3>
+                     <ul class="line">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                     </ul>
          </section>
          <div id="cards-container" class="card-container"></div>
          <script>
             var cardsContainer = document.getElementById('cards-container');
-                    fetch('cards.html')
-                .then(response => response.text())
-                .then(html => cardsContainer.innerHTML = html);
-        </script>       
-      </div>      
+            fetch('cards.html')
+               .then(response => response.text())
+               .then(html => cardsContainer.innerHTML = html);
+         </script>
+      </div>
    </section>
 </body>
