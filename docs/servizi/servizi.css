@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
 *,
 *::before,
 *::after {
@@ -23,13 +24,13 @@ html {
   scroll-behavior: smooth;
 }
 
-h2{
-    text-align: center;
-    font-size: 50px;
-    font-family: arial;
-    margin-top: 50px;
-    color: aqua;
-    text-shadow: 0px 0px 6px black;
+h2 {
+  text-align: center;
+  font-size: 50px;
+  font-family: arial;
+  margin-top: 50px;
+  color: aqua;
+  text-shadow: 0px 0px 6px black;
 }
 
 .button-condividi {
@@ -75,24 +76,6 @@ h2{
   border-radius: 8px;
 }
 
-@media (min-width: 1440px) {
-  html {
-    zoom: 1.5;
-  }
-}
-
-@media (min-width: 2560px) {
-  html {
-    zoom: 1.7;
-  }
-}
-
-@media (min-width: 3860px) {
-  html {
-    zoom: 2.5;
-  }
-}
-
 ::-webkit-scrollbar {
   width: 1.3rem;
 }
@@ -112,22 +95,22 @@ h2{
 }
 
 body {
-    background-image: url(../img/images.jpeg);
-    margin-top: -70px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 330vh;
+  background-image: url(../img/images.jpeg);
+  margin-top: -70px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 330vh;
 }
 
 .container {
-    max-width: 124rem;
-    padding: 0 1rem;
-    margin: -20 auto;
+  max-width: 124rem;
+  padding: 0 0rem;
+  margin: -20 auto;
 }
 
 .text-center {
-    margin-bottom: 30px;
-    text-align: center;
+  margin-bottom: 30px;
+  text-align: center;
 }
 
 .section-heading {
@@ -137,29 +120,17 @@ body {
 }
 
 #tranding {
-  padding: 4rem 0;
+  padding: 6rem 0;
 }
 
-@media (max-width:1440px) {
-    #tranding {
-      padding: 7rem 0;
-    }
-  }
-  
-  #tranding .tranding-slider {
-    height: 52rem;
-    padding: 2rem 0;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  @media (max-width:500px) {
-    #tranding .tranding-slider {
-      height: 45rem;
-    }
-  }
+#tranding .tranding-slider {
+  height: 52rem;
+  padding: 2rem 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 .tranding-slide {
   width: 37rem;
@@ -203,27 +174,15 @@ body {
   font-size: 2rem;
 }
 
-.tranding-slide-img:hover .icon-overlay {  
+.tranding-slide-img:hover .icon-overlay {
   opacity: 1;
 }
 
-@media (max-width:500px) {
-  .tranding-slide {
-    width: 28rem !important;
-    height: 36rem !important;
-  }
-
-  .tranding-slide .tranding-slide-img img {
-    width: 28rem !important;
-    height: 36rem !important;
-  }
-}
-
 .tranding-slide .tranding-slide-img img {
-    width: 65rem;
-    height: 42rem;
-    border-radius: 2rem;
-    object-fit: contain;
+  width: 65rem;
+  height: 42rem;
+  border-radius: 2rem;
+  object-fit: contain;
 }
 
 .tranding-slide .tranding-slide-content {
@@ -264,7 +223,7 @@ body {
 }
 
 .tranding-slider-control {
-  margin-top: -25px;
+  margin-top: 100px;
   position: relative;
   bottom: 2rem;
   display: flex;
@@ -275,34 +234,6 @@ body {
 .tranding-slider-control .swiper-button-next {
   left: 58% !important;
   transform: translateX(-58%) !important;
-}
-
-@media (max-width:990px) {
-  .tranding-slider-control .swiper-button-next {
-    left: 70% !important;
-    transform: translateX(-70%) !important;
-  }
-}
-
-@media (max-width:450px) {
-  .tranding-slider-control .swiper-button-next {
-    left: 80% !important;
-    transform: translateX(-80%) !important;
-  }
-}
-
-@media (max-width:990px) {
-  .tranding-slider-control .swiper-button-prev {
-    left: 30% !important;
-    transform: translateX(-30%) !important;
-  }
-}
-
-@media (max-width:450px) {
-  .tranding-slider-control .swiper-button-prev {
-    left: 20% !important;
-    transform: translateX(-20%) !important;
-  }
 }
 
 .tranding-slider-control .slider-arrow {
@@ -351,7 +282,8 @@ body {
   font-size: 1.6rem;
   text-transform: uppercase;
   outline: none;
-  border: none; /* Rimuovi la definizione del bordo */
+  border: none;
+  /* Rimuovi la definizione del bordo */
   padding: 8px;
   font-weight: 600;
   border-radius: 5px;
