@@ -13,9 +13,7 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
     </script>
     <script type="text/javascript">
-        (function () {
             emailjs.init("user_hH0EIrxAH2qrDt5xj");
-        })();
     </script>
     <title>PixelPro Web Agency</title>
 
@@ -853,13 +851,13 @@
                 <div class="row">
                     <form action="" method="post">
                         <h3>Prenota una videochiamata</h3>
-                        <input type="text" name="name" required maxlength="50" placeholder="il tuo nome" class="box">
-                        <input type="email" name="email" required maxlength="50" placeholder="la tua email" class="box">
+                        <input type="text" name="fullName" required maxlength="50" placeholder="il tuo nome" class="box">
+                        <input type="email" name="email_id" required maxlength="50" placeholder="la tua email" class="box">
                         <input type="number" name="number" required maxlength="10" min="0" max="9999999999"
                             placeholder="il tuo telefono" class="box">
                         <input type="text" name="richiamare" placeholder="giorno e ora per essere richiamato"
                             class="box">
-                        <textarea name="msg" class="box" required maxlength="1000" placeholder="il tuo messaggio"
+                        <textarea name="message" class="box" required maxlength="1000" placeholder="il tuo messaggio"
                             cols="30" rows="10"></textarea>
                         <input type="submit" value="invia" name="send" class="btn">
                     </form>
