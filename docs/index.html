@@ -9,18 +9,16 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <link rel="stylesheet" href="style.css" type="text/css" />
-    <script src="script.js" type="text/javascript"></script>
-
-    <!--
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
     </script>
-    -->
-
     <script type="text/javascript">
         (function () {
             emailjs.init("zuhEYZeiinkcp5B2i");
         })();
     </script>
+    <script src="script.js" type="text/javascript"></script>
+
+
     <title>PixelPro Web Agency</title>
 
     <!-- google font CDN -->
@@ -46,12 +44,12 @@
 
         <!-- navbar -->
 
-        <nav>
+        <nav id="navbar">
             <div class="intestazione">
                 <img src="img/Logo.png" class="logo" alt="">
                 <p>Pixelpro | Web Agency</p>
             </div>
-
+        
             <ul class="links-container">
                 <li class="link-items"><a href="#home" class="links">Home</a></li>
                 <li class="link-items"><a href="#progetti" class="links">Progetti</a></li>
@@ -59,15 +57,16 @@
                 <li class="link-items"><a href="#skills" class="links">Skills</a></li>
                 <li class="link-items"><a href="#contatti" class="links">Contatti</a></li>
             </ul>
-
+        
             <!-- toggle btn -->
-
+        
             <div class="toggle-btn">
                 <span></span>
                 <span></span>
                 <span></span>
             </div>
         </nav>
+        
 
         <!-- sezione hero -->
 
@@ -859,28 +858,13 @@
                         <h3>Prenota una videochiamata</h3>
                         <input type="text" id="fullName" placeholder="il tuo nome" class="box" required /><br />
                         <input type="email" id="email_id" placeholder="la tua email" class="box" required /><br />
-                        <input type="number" id="number" min="0" max="9999999999" placeholder="il tuo telefono"
-                            class="box" required /><br />
+                        <input type="tel" id="number" min="0" max="9999999999" placeholder="il tuo telefono" class="box"
+                            required /><br />
                         <input type="text" id="richiamare" placeholder="giorno e ora per essere richiamato"
                             class="box" /><br />
                         <textarea id="msg" class="box" required maxlength="1000" placeholder="il tuo messaggio"
                             cols="30" rows="10"></textarea>
-                        <input type="submit" value="invia" name="send" class="btn">
-
-
-                        <!--                  
-                        <input type="text" name="name" required maxlength="50" placeholder="il tuo nome" class="box">
-                        <input type="email" name="email" required maxlength="50" placeholder="la tua email" class="box">
-                        <input type="number" name="number" required maxlength="10" min="0" max="9999999999"
-                            placeholder="il tuo telefono" class="box">
-                        <input type="text" name="richiamare" placeholder="giorno e ora per essere richiamato"
-                            class="box">
-                        <textarea name="msg" class="box" required maxlength="1000" placeholder="il tuo messaggio"
-                            cols="30" rows="10"></textarea>
-                        <input type="submit" value="invia" name="send" class="btn">
-                        -->
-
-
+                        <input type="submit" value="invia" class="btn">
                     </form>
 
                     <div class="faq">
@@ -915,16 +899,17 @@
                         </div>
                     </div>
                 </div>
+
                 <script>
                     // Ottenere tutti gli elementi h3 delle FAQ
                     const faqTitles = document.querySelectorAll('.contact .row .faq .box h3');
-
+            
                     // Aggiungere l'evento di clic a ciascun titolo delle FAQ
                     faqTitles.forEach(faqTitle => {
                         faqTitle.addEventListener('click', () => {
                             // Ottenere il genitore dell'elemento h3 (la casella delle FAQ)
                             const faqBox = faqTitle.parentElement;
-
+            
                             // Aggiungere o rimuovere la classe 'active' per mostrare o nascondere il contenuto
                             faqBox.classList.toggle('active');
                         });
