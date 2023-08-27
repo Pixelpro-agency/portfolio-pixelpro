@@ -67,8 +67,15 @@ filters.map((btn, i) => {
     })
 })
 
-projectCards[0].classList.add('active');
-setUpProjectInfo(projects[0])
+if (projectCards.length > 0) {
+    projectCards[0].classList.add('active');
+    setUpProjectInfo(projects[0]);
+} else {
+    console.error;
+}
+
+
+
 
 // navbar
 

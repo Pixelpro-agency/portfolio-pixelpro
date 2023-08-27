@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <link rel="stylesheet" href="style.css" type="text/css" />
@@ -34,7 +33,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
         integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-
 </head>
 
 <body>
@@ -49,7 +47,7 @@
                 <img src="img/Logo.png" class="logo" alt="">
                 <p>Pixelpro | Web Agency</p>
             </div>
-        
+
             <ul class="links-container">
                 <li class="link-items"><a href="#home" class="links">Home</a></li>
                 <li class="link-items"><a href="#progetti" class="links">Progetti</a></li>
@@ -57,16 +55,16 @@
                 <li class="link-items"><a href="#skills" class="links">Skills</a></li>
                 <li class="link-items"><a href="#contatti" class="links">Contatti</a></li>
             </ul>
-        
+
             <!-- toggle btn -->
-        
+
             <div class="toggle-btn">
                 <span></span>
                 <span></span>
                 <span></span>
             </div>
         </nav>
-        
+
 
         <!-- sezione hero -->
 
@@ -856,7 +854,7 @@
                 <div class="row">
                     <form id="myForm">
                         <h3>Prenota una videochiamata</h3>
-                        <input type="text" id="fullName" placeholder="il tuo nome" class="box" required /><br />
+                        <input type="text" id="fullName" placeholder="il tuo nome e cognome" class="box" required /><br />
                         <input type="email" id="email_id" placeholder="la tua email" class="box" required /><br />
                         <input type="tel" id="number" min="0" max="9999999999" placeholder="il tuo telefono" class="box"
                             required /><br />
@@ -903,13 +901,13 @@
                 <script>
                     // Ottenere tutti gli elementi h3 delle FAQ
                     const faqTitles = document.querySelectorAll('.contact .row .faq .box h3');
-            
+
                     // Aggiungere l'evento di clic a ciascun titolo delle FAQ
                     faqTitles.forEach(faqTitle => {
                         faqTitle.addEventListener('click', () => {
                             // Ottenere il genitore dell'elemento h3 (la casella delle FAQ)
                             const faqBox = faqTitle.parentElement;
-            
+
                             // Aggiungere o rimuovere la classe 'active' per mostrare o nascondere il contenuto
                             faqBox.classList.toggle('active');
                         });
@@ -938,8 +936,6 @@
             <!-- three js -->
             <script async src="https://unpkg.com/es-module-shims@1.6.3/dist/es-module-shims.js"></script>
             <script type="importmap"></script>
-
-            <script type="module" src="three.js"></script>
 
             <!-- local js files -->
             <script src="projects.js"></script>

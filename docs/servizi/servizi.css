@@ -223,7 +223,7 @@ body {
 }
 
 .tranding-slider-control {
-  margin-top: 100px;
+  margin-top: -40px;
   position: relative;
   bottom: 2rem;
   display: flex;
