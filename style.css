@@ -904,80 +904,222 @@ body {
 
     .contact .riga {
         flex-direction: column;
-        /* Imposta la direzione della flessione a colonna */
         align-items: center;
-        /* Centra gli elementi */
     }
 
     .contact .riga form,
     .contact .riga .faq {
         width: 90%;
-        /* Imposta la larghezza al 90% */
         margin: 10px auto;
-        /* Aggiungi margini per centrare gli elementi */
         padding: 20px;
-        /* Aggiungi spaziatura interna */
         box-sizing: border-box;
-        /* Imposta il box-sizing per includere il padding nella larghezza */
     }
 
     .contact .riga form,
     .contact .riga .faq {
         font-size: 0.8rem;
-        /* Imposta una dimensione del carattere più piccola */
     }
 
     .contact .riga form .box {
         font-size: 0.8rem;
-        /* Imposta una dimensione del carattere più piccola */
     }
-
-
 
     .contact .riga form h3 {
         font-size: 0.9rem;
-        /* Imposta una dimensione del carattere più piccola */
-    }
-
-    .contact .riga form .box#richiamare {
-        max-width: 100%;
-        /* Imposta la larghezza massima al 100% */
     }
 
     .contact .riga .faq .box p {
-        font-size: 12px; /* Imposta la grandezza del carattere a 14px */
-      }
+        font-size: 0.9rem;
+    }
 
-      .piepagina {
-        flex-direction: column; /* Cambia la direzione dei flessi in colonna */
-        align-items: center; /* Allinea gli elementi al centro */
-      }
-    
-      .piepagina p {
-        font-size: 12px; /* Riduce la grandezza del carattere del paragrafo */
+    .piepagina {
+        flex-direction: column;
+        align-items: center;
+    }
 
-        margin-left: 0; /* Rimuove il margine sinistro */
-        text-align: center; /* Allinea il testo al centro */
-        margin-top: 10px; /* Riduce il margine superiore */
-      }
-    
-      .logo-footer {
-        margin: 0; /* Rimuove il margine */
-      }
-    
-      .links-container {
-        margin-top: 10px; /* Aggiunge un margine superiore */
-      }
-    
-      .link-items {
-        margin: 0 5px; /* Riduce il margine laterale */
-      }
+    .piepagina p {
+        font-size: 12px;
+        margin-left: 0;
+        text-align: center;
+        margin-top: 10px;
+    }
 
-      .links {
-        font-size: 12px; /* Riduce la grandezza del carattere dei link */
-      }
+    .logo-footer {
+        margin: 0;
+    }
+
+    .links-container {
+        margin-top: 10px;
+    }
+
+    .link-items {
+        margin: 0 5px;
+    }
+
+    .links {
+        font-size: 12px;
+    }
 }
 
+
+
+@media only screen and (min-width: 321px) and (max-width: 480px) {
+
+    .carousel-inner .hero-headline {
+        font-size: 24px;
+    }
+
+    .carousel-inner .hero-headline-two {
+        font-size: 24px;
+    }
+
+    .carousel-inner .hero-secondary-line {
+        font-size: 14px;
+    }
+
+    .swiper-wrapper {
+        display: flex;
+        justify-content: center;
+    }
+
+    .swiper-slide {
+        flex-shrink: 0;
+    }
+
+    .swiper-slide .fa.fa-search {
+        position: absolute;
+        bottom: 10%;
+        right: 5%;
+        color: var(--white);
+        background-color: var(--second-color);
+        border-radius: 50%;
+        opacity: 1;
+        width: 2.5rem;
+        height: 2.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: opacity 0.3s ease;
+    }
+
+    .swiper-slide:hover .fa.fa-search {
+        opacity: 1;
+    }
+
+    .section-info-one {
+        font-size: 18px;
+        text-align: center;
+        padding-left: 35px;
+    }
+
+    .contenitore-bottoni {
+        padding-left: 8px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .portfolio-filter {
+        margin-bottom: 10px;
+    }
+
+    .portfolio-filter .filter-btn,
+    .portfolio-filter .active {
+        margin-bottom: 0;
+        width: auto;
+        font-size: 14px;
+        padding: 5px 10px;
+    }
+
+    .skills-contenitore {
+        padding-top: 20px;
+        margin-top: 30px;
+        width: 100%;
+    }
+
+    .contenitori-skills {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contenitori-skills .contenitore-skills-destro {
+        width: calc(100% - 40px);
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 20px;
+    }
+
+    .contenitori-skills .contenitore-skills-sinistro {
+        width: 490px;
+        margin-top: 50px;
+        margin-left: 5px;
+        margin-right: 0px;
+    }
+
+    .contenitori-skills .contenitore-skills-destro {
+        width: 490px;
+        margin-left: 22px;
+        margin-top: 100px;
+    }
+
+    .contact .riga {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact .riga form,
+    .contact .riga .faq {
+        width: 90%;
+        margin: 10px auto;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .contact .riga form,
+    .contact .riga .faq {
+        font-size: 1rem;
+    }
+
+    .contact .riga form .box {
+        font-size: 1rem;
+    }
+
+    .contact .riga form h3 {
+        font-size: 1.1rem;
+    }
+
+    .contact .riga .faq .box p {
+        font-size: 1rem;
+    }
+
+    .piepagina {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .piepagina p {
+        font-size: 15px;
+        margin-left: 0;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .logo-footer {
+        margin: 0;
+    }
+
+    .links-container {
+        margin-top: 10px;
+    }
+
+    .link-items {
+        margin: 0 5px;
+    }
+
+    .links {
+        font-size: 15px;
+    }
+}
 
 /*
 
