@@ -1121,9 +1121,18 @@ body {
     }
 }
 
-/*
 
-@media (max-width: 992px) {
+
+@media only screen and (min-width: 481px) and (max-width: 600px) {
+    .carousel-inner .hero-headline,
+    .carousel-inner .hero-headline-two {
+        font-size: 28px;
+    }
+
+    .carousel-inner .hero-secondary-line {
+        font-size: 16px;
+    }
+
     .swiper-wrapper {
         display: flex;
         justify-content: center;
@@ -1131,23 +1140,44 @@ body {
 
     .swiper-slide {
         flex-shrink: 0;
-        position: relative;
     }
 
-    .swiper-slide i.fa {
+    .swiper-slide .fa.fa-search {
+        position: absolute;
+        bottom: 10%;
+        right: 5%;
+        color: var(--white);
+        background-color: var(--second-color);
+        border-radius: 50%;
         opacity: 1;
-        transition: none;
+        width: 2.5rem;
+        height: 2.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: opacity 0.3s ease;
+    }
+
+    .swiper-slide:hover .fa.fa-search {
+        opacity: 1;
     }
 
     .section-info-one {
-        padding-left: 60px;
+            font-size: 18px;
+            text-align: center;
+            padding-left: 50px;
     }
 
-    .portfolio-filter button {
-        font-size: 0.8rem;
-        padding: 4px;
-        margin-top: 20px;
-        margin-bottom: 10px;
+    .portfolio-filter .filter-btn,
+    .portfolio-filter .active {
+        font-size: 16px;
+        padding: 6px 12px;
+    }
+
+    .skills-contenitore {
+        padding-top: 20px;
+        margin-top: 30px;
+        width: 100%;
     }
 
     .contenitori-skills {
@@ -1155,233 +1185,23 @@ body {
         align-items: center;
     }
 
-    .contenitori-skills .contenitore-skills-sinistro,
     .contenitori-skills .contenitore-skills-destro {
-        width: 100%;
-        margin: 0 auto;
-        margin-left: 145px;
-        margin-right: 35px;
-    }
-
-    .contenitori-skills .contenitore-skills-sinistro {
-        margin-top: 50px;
-        margin-left: 55px;
-        width: 490px;
-    }
-
-    .contenitori-skills .contenitore-skills-destro {
-        width: 490px;
-        margin-left: 55px;
-        margin-top: 100px;
-    }
-
-    .contact .riga {
-        flex-direction: row;
-        gap: 2rem;
-    }
-
-    .contact .riga form,
-    .contact .riga .faq {
-        flex-basis: calc(50% - 1rem);
-    }
-
-    .piepagina {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .logo-footer {
-        width: 80px;
-        height: auto;
-        margin-left: 50px;
-    }
-
-    .piepagina p {
-        text-align: center;
-        margin-left: 0;
-        font-size: 0.8rem;
-    }
-
-    .piepagina p,
-    .links-container {
-        flex: 1;
-        text-align: center;
-        margin: 10px;
-        margin-left: -100px;
-    }
-
-    .link-items {
-        margin: 0 5px;
-        font-size: 0.9rem;
-        margin-left: 75px;
-        margin-right: -60px;
-    }
-}
-
-
-
-@media (max-width: 768px) {
-
-    .riga {
-        gap: 2rem;
-    }
-
-    .riga form,
-    .box {
-        flex-basis: calc(50% - 1rem);
-    }
-
-    .riga .faq .box {
-        margin-top: 1rem;
-    }
-
-    .btn {
-        margin-top: 2rem;
-    }
-
-    .riga {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .riga form,
-    .faq {
-        flex-basis: 100%;
-    }
-
-    .riga .faq .box {
-        margin-top: 0.5rem;
-    }
-
-    .btn {
-        margin-top: 2rem;
-    }
-
-    .piepagina {
-        display: flex;
-        flex-direction: column;
-        margin-left: 110px;
-    }
-
-    .logo-footer {
-        width: 80px;
-        height: auto;
-        margin-right: 160px;
-    }
-
-    .piepagina p {
-        margin-top: 10px;
-        font-size: 0.8rem;
-    }
-
-    .links-container {
-        margin-top: 10px;
-        margin-left: -230px !important;
-    }
-
-    .links {
-        margin: 0 px;
-        font-size: 0.9rem;
-    }
-}
-
-
-
-@media (max-width: 678px) {
-    .swiper-wrapper {
-        display: flex;
-        justify-content: center;
-    }
-
-    .swiper-slide {
-        flex-shrink: 0;
-        position: relative;
-    }
-
-    .swiper-slide i.fa {
-        opacity: 1;
-        transition: none;
-    }
-
-    .section-info-one {
-        padding-left: 60px;
-    }
-
-    .portfolio-filter button {
-        font-size: 0.8rem;
-        padding: 4px;
-        margin-top: 20px;
-        margin-bottom: 10px;
-    }
-
-    .contenitore-skills {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .contenitori-skills .contenitore-skills-sinistro,
-    .contenitori-skills .contenitore-skills-destro {
-        width: 100%;
-        margin: 0 auto;
-        margin-left: 20px;
-        margin-right: 200px;
-    }
-
-    .contenitori-skills .contenitore-skills-sinistro {
-        margin-top: 50px;
-        margin-left: 30px;
-        width: 490px;
-    }
-
-    .contenitori-skills .contenitore-skills-destro {
-        width: 490px;
-        margin-left: 30px;
-        margin-top: 100px;
-    }
-}
-
-
-
-@media (max-width: 576px) {
-
-    .swiper-wrapper {
-        display: flex;
-        justify-content: center;
-    }
-
-    .swiper-slide {
-        flex-shrink: 0;
-    }
-
-    .section-info-one {
-        padding-left: 45px;
-    }
-
-    .contenitori-skills {
-        flex-direction: column;
-        padding-right: 15px;
-    }
-
-    .contenitori-skills .contenitore-skills-sinistro,
-    .contenitori-skills .contenitore-skills-destro {
-        width: 100%;
-        margin: 0 auto;
+        width: calc(100% - 40px);
         margin-left: 20px;
         margin-right: 20px;
+        margin-top: 20px;
     }
 
     .contenitori-skills .contenitore-skills-sinistro {
         width: 490px;
         margin-top: 50px;
-        margin-left: -12px;
+        margin-left: 10px;
         margin-right: 0px;
     }
 
     .contenitori-skills .contenitore-skills-destro {
         width: 490px;
-        margin-left: -12px;
+        margin-left: 27px;
         margin-top: 100px;
     }
 
@@ -1390,19 +1210,240 @@ body {
         align-items: center;
     }
 
-    .contact .riga .form {
-        flex-basis: 100%;
-    }
-
+    .contact .riga form,
     .contact .riga .faq {
-        flex-basis: 100% !important;
+        width: 90%;
+        margin: 10px auto;
+        padding: 20px;
+        box-sizing: border-box;
     }
 
-    .riga .faq .box {
-        margin-top: 0.5rem;
+    .piepagina {
+        flex-direction: column;
+        align-items: center;
     }
 
-    .btn {
-        margin-top: 2rem;
+    .piepagina p {
+        font-size: 15px;
+        margin-left: 0;
+        text-align: center;
+        margin-top: 10px;
     }
-}*/
+
+    .logo-footer {
+        margin: 0;
+    }
+
+    .links-container {
+        margin-top: 10px;
+    }
+
+    .link-items {
+        margin: 0 5px;
+    }
+
+    .links {
+        font-size: 15px;
+    }
+}
+
+
+
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+
+    .swiper-wrapper {
+        display: flex;
+        justify-content: center;
+    }
+
+    .swiper-slide {
+        flex-shrink: 0;
+    }
+
+    .swiper-slide .fa.fa-search {
+        position: absolute;
+        bottom: 10%;
+        right: 5%;
+        color: var(--white);
+        background-color: var(--second-color);
+        border-radius: 50%;
+        opacity: 1;
+        width: 2.5rem;
+        height: 2.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: opacity 0.3s ease;
+    }
+
+    .swiper-slide:hover .fa.fa-search {
+        opacity: 1;
+    }
+
+    .skills-contenitore {
+        padding-top: 20px;
+        margin-top: 30px;
+        width: 100%;
+    }
+
+    .contenitori-skills {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contenitori-skills .contenitore-skills-destro {
+        width: calc(100% - 40px);
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 20px;
+    }
+
+    .contenitori-skills .contenitore-skills-sinistro {
+        width: 490px;
+        margin-top: 50px;
+        margin-left: 10px;
+        margin-right: 0px;
+    }
+
+    .contenitori-skills .contenitore-skills-destro {
+        width: 490px;
+        margin-left: 27px;
+        margin-top: 100px;
+    }
+    
+    .contact .riga {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact .riga form,
+    .contact .riga .faq {
+        width: 90%;
+        margin: 10px auto;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .piepagina {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .piepagina p {
+        font-size: 16px;
+        margin-left: 0;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .logo-footer {
+        margin: 0;
+    }
+
+    .links-container {
+        margin-top: 10px;
+    }
+
+    .link-items {
+        margin: 0 5px;
+    }
+
+    .links {
+        font-size: 18px;
+    }
+}
+
+
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+
+    .swiper-wrapper {
+        display: flex;
+        justify-content: center;
+    }
+
+    .swiper-slide {
+        flex-shrink: 0;
+    }
+
+    .swiper-slide .fa.fa-search {
+        position: absolute;
+        bottom: 10%;
+        right: 5%;
+        color: var(--white);
+        background-color: var(--second-color);
+        border-radius: 50%;
+        opacity: 1;
+        width: 2.5rem;
+        height: 2.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: opacity 0.3s ease;
+    }
+
+    .swiper-slide:hover .fa.fa-search {
+        opacity: 1;
+    }
+
+    .skills-contenitore {
+        padding-top: 20px;
+        margin-top: 30px;
+        width: 100%;
+    }
+
+    .contenitori-skills {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contenitori-skills .contenitore-skills-destro {
+        width: calc(100% - 40px);
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 20px;
+    }
+
+    .contenitori-skills .contenitore-skills-sinistro {
+        width: 490px;
+        margin-top: 50px;
+        margin-left: 10px;
+        margin-right: 0px;
+    }
+
+    .contenitori-skills .contenitore-skills-destro {
+        width: 490px;
+        margin-left: 27px;
+        margin-top: 100px;
+    }
+
+    .piepagina {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .piepagina p {
+        font-size: 16px;
+        margin-left: 0;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .logo-footer {
+        width: 125px;
+        height: auto;
+        margin: 0;
+    }
+
+    .links-container {
+        margin-top: 10px;
+    }
+
+    .link-items {
+        margin: 0 5px;
+    }
+
+    .links {
+        font-size: 18px;
+    }
+}
