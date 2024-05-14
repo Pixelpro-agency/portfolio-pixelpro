@@ -280,18 +280,18 @@ h2 {
 
 
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 320px) {
+
     .container {
-        width: 80%;
+        width: 90%;
         margin-left: auto;
         margin-right: auto;
-        margin-bottom: 15%;
+        margin-bottom: 20%;
     }
 
-    .wrapper {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    .container h2 {
+        font-size: 20px;
+        margin-bottom: 50px;
     }
 
     #nav-arrows {
@@ -299,29 +299,95 @@ h2 {
         display: flex;
         flex-direction: row;
         justify-content: center;
-        bottom: 90px;
-        left: -4%;
+        bottom: 290px;
+        left: -29%;
         transform: translateX(-50%);
     }
 
     .nav-arrows a {
         position: relative;
-        width: 32px;
-        height: 32px;
-        margin: 0 10px;
+        width: 24px;
+        height: 24px;
+        margin: 0 5px;
     }
 
     .nav-arrows a:first-child {
-        left: 435px;
+        left: 350px;
     }
 
     .nav-arrows a:last-child {
-        left: 195px;
+        left: 150px;
     }
 
     .button-container {
         position: relative;
-        bottom: -50px;
+        bottom: -30px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .tranding-slide-img .icon-overlay {
+        width: 1.5rem;
+        height: 1.5rem;
+        opacity: 1;
+    }
+
+    .tranding-slide-img .icon-overlay i {
+        margin-top: 4px;
+        display: block;
+        font-size: 0.8rem;
+        color: white;
+    }
+
+    .inline-btn {
+        font-size: 0.6rem;
+        padding: 0.3rem 0.8rem;
+    }
+}
+
+
+
+@media screen and (min-width: 321px) and (max-width: 480px) {
+    .container {
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 18%;
+    }
+
+    .container h2 {
+        font-size: 30px;
+        margin-bottom: 45px;
+    }
+
+    #nav-arrows {
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        bottom: 220px;
+        left: -8%;
+        transform: translateX(-50%);
+    }
+
+    .nav-arrows a {
+        position: relative;
+        width: 28px;
+        height: 28px;
+        margin: 0 8px;
+    }
+
+    .nav-arrows a:first-child {
+        left: 370px;
+    }
+
+    .nav-arrows a:last-child {
+        left: 170px;
+    }
+
+    .button-container {
+        position: relative;
+        bottom: -20px;
         left: 50%;
         transform: translateX(-50%);
     }
@@ -334,20 +400,85 @@ h2 {
 
     .tranding-slide-img .icon-overlay i {
         display: block;
-        font-size: 1.3rem;
-        color: white;
         font-size: 1rem;
+        color: white;
     }
 
     .inline-btn {
         font-size: 0.7rem;
-        padding: 0.5rem 1rem;
+        padding: 0.4rem 1rem;
     }
 }
 
 
 
-@media screen and (min-width: 577px) and (max-width: 768px) {
+@media screen and (min-width: 481px) and (max-width: 600px) {
+    .container {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 15%;
+    }
+
+    .container h2 {
+        font-size: 32px;
+        margin-bottom: 40px;
+    }
+
+    #nav-arrows {
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        bottom: 130px;
+        left: -1%;
+        transform: translateX(-50%);
+    }
+
+    .nav-arrows a {
+        position: relative;
+        width: 32px;
+        height: 32px;
+        margin: 0 10px;
+    }
+
+    .nav-arrows a:first-child {
+        left: 400px;
+    }
+
+    .nav-arrows a:last-child {
+        left: 200px;
+    }
+
+    .button-container {
+        position: relative;
+        bottom: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .tranding-slide-img .icon-overlay {
+        width: 2.5rem;
+        height: 2.5rem;
+        opacity: 1;
+    }
+
+    .tranding-slide-img .icon-overlay i {
+        display: block;
+        font-size: 1.2rem;
+        color: white;
+    }
+
+    .inline-btn {
+        margin-top: 50px;
+        font-size: 0.8rem;
+        padding: 0.5rem 1.2rem;
+    }
+}
+
+
+
+@media screen and (min-width: 601px) and (max-width: 768px) {
     .container {
         width: 90%;
         margin-left: auto;
@@ -394,8 +525,8 @@ h2 {
     }
 
     .tranding-slide-img .icon-overlay {
-        width: 2rem;
-        height: 2rem;
+        width: 2.5rem;
+        height: 2.5rem;
         opacity: 1;
     }
 
@@ -414,13 +545,12 @@ h2 {
 
 
 
-@media screen and (min-width: 769px) and (max-width: 992px) {
-
+@media screen and (min-width: 769px) and (max-width: 1024px) {
     .container {
-        width: 90%;
+        width: 95%;
         margin-left: auto;
         margin-right: auto;
-        margin-bottom: 15%;
+        margin-bottom: 10%;
     }
 
     .wrapper {
@@ -434,43 +564,48 @@ h2 {
         display: flex;
         flex-direction: row;
         justify-content: center;
-        bottom: -30px;
-        left: 18%;
+        bottom: 120px;
+        left: 15%;
         transform: translateX(-50%);
     }
 
     .nav-arrows a {
         position: relative;
-        width: 32px;
-        height: 32px;
-        margin: 0 10px;
+        width: 36px;
+        height: 36px;
+        margin: 0 12px;
     }
 
     .nav-arrows a:first-child {
-        left: 435px;
+        left: 470px;
     }
 
     .nav-arrows a:last-child {
-        left: 195px;
+        left: 220px;
     }
 
     .button-container {
         position: relative;
-        bottom: -50px;
+        bottom: -40px;
         left: 50%;
         transform: translateX(-50%);
     }
 
     .tranding-slide-img .icon-overlay {
-        width: 2rem;
-        height: 2rem;
+        width: 3rem;
+        height: 3rem;
         opacity: 1;
     }
 
     .tranding-slide-img .icon-overlay i {
         display: block;
-        font-size: 1.3rem;
+        font-size: 1.5rem;
         color: white;
-        font-size: 1rem;
+    }
+
+    .inline-btn {
+        margin-top: 50px;
+        font-size: 1.2rem;
+        padding: 0.6rem 1.2rem;
     }
 }
