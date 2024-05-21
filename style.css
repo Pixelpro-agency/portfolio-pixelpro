@@ -92,7 +92,7 @@ body {
 }
 
 .bg-image-two {
-    background-image: url('./images/Ufficio-arredato1.jpg');
+    background-image: url('./images/Ufficio-arredato.jpg');
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -1029,6 +1029,11 @@ body {
         width: auto;
         font-size: 14px;
         padding: 5px 10px;
+    }
+
+    .portfolio-filter button:hover .portfolio-filter button:active {
+        color: var(--white);
+        background-color: var(--main-color);
     }
 
     .skills-contenitore {
